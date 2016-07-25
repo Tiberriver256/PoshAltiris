@@ -1,6 +1,6 @@
 ﻿Function ConvertTo-Function ($WebService) {
 
-    $WebServiceMethods = $WebService | gm -MemberType Method | where {$_.Name -notmatch "Async" -and$_.Definition -notmatch "System.IAsyncResult" -and @("ToString","InitializeLifetimeService","GetType","GetHashcode","Equals","GetLifeTimeService","CreateObjRef") -notcontains $_.name}
+    $WebServiceMethods = $WebService | gm -MemberType Method | where {$_.Name -notmatch "Async" -and$_.Definition -notmatch "System.IAsyncResult" -and @("Discover","Dispose","ToString","Abort","InitializeLifetimeService","GetType","GetHashcode","Equals","GetLifeTimeService","CreateObjRef") -notcontains $_.name}
 
     foreach ($Method in $WebServiceMethods) {
     Write-Host "Parsing method: $Method"
