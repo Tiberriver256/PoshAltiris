@@ -1,0 +1,235 @@
+<!--
+SYMANTEC:     Copyright (c) 2016 Symantec Corporation. All rights reserved.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF SYMANTEC CORPORATION. USE, 
+DISCLOSURE OR REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF SYMANTEC
+CORPORATION.
+
+The Licensed Software and Documentation are deemed to be commercial computer software as defined
+in FAR 12.212 and subject to restricted rights as defined in FAR Section 52.227-19 "Commercial
+Computer Software - Restricted Rights" and DFARS 227.7202, Rights in "Commercial Computer Software
+or Commercial Computer Software Documentation", as applicable, and any successor regulations,
+whether delivered by Symantec as on premises or hosted services.  Any use, modification, reproduction
+release, performance, display or disclosure of the Licensed Software and Documentation by the U.S.
+Government shall be solely in accordance with the terms of this Agreement.
+-->
+
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" /><META NAME="save" CONTENT="history" /><title>Installing the ASDK</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" /><link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" /><script type="text/javascript" src="../scripts/EventUtilities.js"> </script><script type="text/javascript" src="../scripts/SplitScreen.js"> </script><script type="text/javascript" src="../scripts/Dropdown.js"> </script><script type="text/javascript" src="../scripts/script_manifold.js"> </script><script type="text/javascript" src="../scripts/script_feedBack.js"> </script><script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script><script type="text/javascript" src="../scripts/CommonUtilities.js"> </script><xml><MSHelp:Keyword Index="A" Term="dbb6aa3d-6c46-4921-b3c1-bc3c4bbc6180" /><MSHelp:Attr Name="RevisionNumber" Value="1" /><MSHelp:Attr Name="AssetID" Value="dbb6aa3d-6c46-4921-b3c1-bc3c4bbc6180" /><MSHelp:Attr Name="Abstract" Value="&#xD;&#xA;          A typical installation of the Administrator SDK &quot;ASDK&quot;) involves a two-part process.  The first part is the&#xD;&#xA;          installation of the ASDK components onto the machine hosting Notification Server (NS).&#xD;&#xA;          The second part is th ..." /><MSHelp:Attr Name="TopicType" Value="kbArticle" /><MSHelp:Attr Name="Locale" Value="en-us" /></xml></head><body><input type="hidden" id="userDataCache" class="userDataStyle" /><input type="hidden" id="hiddenScrollOffset" /><img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" title="Collapse image" /><img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" title="Expand Image" /><img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" /><img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" /><img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" /><img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" /><img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" title="Copy image" /><img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" title="CopyHover image" /><div id="header"><table id="topTable" cellspacing="0" cellpadding="0"><tr><td><span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0"><img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span></td></tr></table><div id="devlangsMenu"><input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on" onClick="SetLanguage(this)" /><label class="checkboxLabel" for="CSharpCheckbox">C#</label><br /></div><table id="bottomTable" cellpadding="0" cellspacing="0"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Symantec Administrator SDK 8.0</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle">Installing the ASDK</span></td></tr><tr id="headerTableRow3"><td align="left">
+  <span id="headfeedbackarea" class="feedbackhead">
+      <a href="javascript:SubmitFeedback('DL-AL-SDKSupport@symantec.com','Symantec Administrator SDK 8.0','','1.0.0.0','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback');">
+        
+        Send Feedback
+      </a>
+	</span>
+</td></tr></table><table id="gradientTable"><tr><td class="nsrBottom" background="../icons/gradient.gif" /></tr></table></div><div id="mainSection"><div id="mainBody"><div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" /><span style="color: DarkGray"> </span>
+  
+
+    <div class="introduction">
+      
+    </div>
+    
+    <a name="Section1" /><h1 class="heading"><span onclick="ExpandCollapse(sectionToggle0)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggle0, event)" tabindex="0"><img id="sectionToggle0" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Overview</span></h1><div id="sectionSection0" class="section" name="collapseableSection" style="">
+        <p>
+          A typical installation of the Administrator SDK "ASDK") involves a two-part process. The first part is the 
+          installation of the ASDK components onto the machine hosting Notification Server (NS).
+          The second part is the optional (but recommended) installation of the COM components on any 
+          remote (non-NS) computers that meet certain requirements (see Part II, below). 
+        </p>
+        <p>
+          This process can be summarized as follows:
+          <ul><li>
+              The Symantec Installation Manager (SIM) is used to install all ASDK components onto an NS server.
+              The ASDK is automatically installed as part of the Symantec Management Platform (SMP). It is not
+              a separately listed installation item in SIM.
+            </li><li>
+              If desired, you can manually copy the *.msi file representing the ASDK's COM components 
+              to one or more remote computers on which you want to perform COM-based development 
+              (such as writing scripts using VBScript). Then, you manually run the MSI files to install
+              the COM components onto the remote machine. In addition, you can manually copy another 
+              MSI file that will install a command-line interface (CLI) executable which interacts with the 
+              Symantec Agent's existing COM components (if the Agent has already been installed on the remote machine). 
+              The MSI files are located in the folder "%ProgramFiles%\Altiris\Symantec Installation Manager\Installs\Altiris".
+              The typical command line for installing an MSI is the following:
+              			<b>msiexec -i Symantec_asdkcomcombine_8_0_x64.msi skipaim=true</b>
+              , command line for uninstall MSI: 
+                                 <b>msiexec -x Symantec_asdkcomcombine_8_0_x64.msi</b>.
+            </li><li>
+              SIM installs programming example files and help files onto the NS server.  These files can
+              also be installed onto a remote development computer by copying and running the applicable
+              MSI file.
+            </li></ul>
+        </p>
+        <p>
+          The following table displays the various MSI installation files installed as the ASDK, with
+          descriptions of each module and the manner of its installation.  You will not manually run any of these
+          MSI files during the ASDK installation using SIM; however, you may want to manually run the COM
+          installation files on a remote machine if you choose to use the remote COM installation
+          procedure described in Part II, below.  In addition, it is good to have a general idea
+          of what each component installs in the event you need to repair or reinstall certain files
+          after your initial installation.
+        </p>
+        <p>
+          Installation files that have "_x86" in their filename target computers with a 32-bit OS; files that have
+          "_64" in their name target computers with a 64-bit OS. As of SMP 7.7 32 bit is no longer supported on the
+          SMP server, but the "_x86" COM files can still be copied and used on 32 bit operating systems.
+        </p>
+        <p>
+          <div class="caption"></div><div class="tableSection"><table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+            
+              <tr>
+                <th>ASDK Installation Files</th>
+                <th>Description</th>
+                <th>Installed By:</th>
+              </tr>
+            
+            <tr>
+              <td>
+               symantec_asdkcomcombine_8_0_x64.msi
+               symantec_asdkcomcombine_8_0_x86.msi
+              </td>
+              <td>
+                 An assembly file that contains combined COM components connected with Agent ASDK.
+              </td>
+              <td>
+                Installed by SIM on the NS server; optionally, may be installed manually on client computers that meet system requirements.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                symantec_asdkservercombine_8_0_x64.msi<br/>
+              </td>
+              <td>
+                This assembly file contains all COM installation files that are connected with Server ASDK.
+              </td>
+              <td>
+                Installed by SIM on the NS server.
+              </td>
+            </tr>
+          </table></div>
+        </p>
+        <p>
+          After you have installed the ASDK components onto an NS server, the directories under the
+          Altiris ASDK directory at the root of the installation directory will include the following:
+        </p>
+        <p>
+          <div class="caption"></div><div class="tableSection"><table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+            <tr>
+              <td>
+                Bin
+              </td>
+              <td>Contains command-line interface (CLI) executables.</td>
+            </tr>
+            <tr>
+              <td>
+                COM Assemblies
+              </td>
+              <td>Contains COM assembly files.</td>
+            </tr>
+            <tr>
+              <td>
+                Config
+              </td>
+              <td>Contains configuration files.</td>
+            </tr>
+            <tr>
+              <td>
+                Web
+              </td>
+              <td>Contains the files for the ASDK web service virtual directory.</td>
+            </tr>
+            <tr>
+              <td>
+                Samples
+              </td>
+              <td>Contains working example scripts for many APIs and common tasks.</td>
+            </tr>
+            <tr>
+              <td>
+                Help
+              </td>
+              <td>Contains help files documentation in CHM format.</td>
+            </tr>
+          </table></div>
+        </p>
+      </div>
+
+    <a name="Section2" /><h1 class="heading"><span onclick="ExpandCollapse(sectionToggle1)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggle1, event)" tabindex="0"><img id="sectionToggle1" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Part I: Installing ASDK Components on NS Using SIM</span></h1><div id="sectionSection1" class="section" name="collapseableSection" style="">
+        <p>
+          <ol><li>
+              Run SIM on the Notification Server that you want to target.
+            </li><li>
+              Choose the platform (SMP) or any solution suite that installs the platform. The ASDK is installed 
+              automatically as part of the platform.
+              SIM will run the installation wizard that will guide you through the installation process. SIM
+              installs the integration assemblies, the Web services, the COM interfaces, and the command-line
+              interface (CLI) executables for the ASDK's Server components.
+            </li></ol>
+        </p>
+        <p>
+          You can also immediately program using VBScript or perform other COM-based programming directly on the
+          NS server.  However, to install COM components on a remote computer, continue to Part II.
+        </p>
+      </div>
+
+    <a name="Section3" /><h1 class="heading"><span onclick="ExpandCollapse(sectionToggle2)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggle2, event)" tabindex="0"><img id="sectionToggle2" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />
+        Part II: Installing COM on Remote Computers for VBScript Development
+      </span></h1><div id="sectionSection2" class="section" name="collapseableSection" style="">
+        <p>
+          Some ASDK users prefer to program using VBScript, either on the NS server or on a remote computer.
+          You can do this by accessing the applicable COM component for the product that you want to program
+          against.
+        </p>
+        <p>
+          The COM MSI files are located in the folder:
+          		"%ProgramFiles%\Altiris\Symantec Installation Manager\Installs\Altiris".
+          The typical command line for installing an MSI is the following:
+       			<b>msiexec /i Symantec_asdkcomcombine_8_0_x64.msi skipaim=true</b>
+        </p>
+        <p>
+          To write VBScripts from a remote (non-NS) machine, the remote computer does not have to have the
+          Symantec Management Agent installed. However, the remote machine must meet these prerequisites:
+        </p>
+        <p>
+          <ol><li>
+              Be a Windows computer that has .NET Framework v4.1 installed.
+            </li><li>
+              Be able to access the ASDK Web services that are installed on the NS server.
+            </li></ol>
+        </p>
+        <p>
+          You can install the COM components on any number of remote computers that meet the above requirements.
+        </p>
+        <p>
+          To install the COM components on a remote computer use the following procedure:
+        </p>
+        <p>
+          <ol><li>
+             On the NS server, locate the MSI file(s) for the COM component that you want to install remotely 
+             by navigating to the %ProgramFiles%\Altiris\Symantec Installation Manager\Installs\Altiris directory.
+            </li><li>
+              Copy the MSI to the remote computer that you want to install them on.<br/> 
+              For 64-bit computers, copy the Symantec_asdkcomcombine_8_0_x64.msi file.<br/>  
+              For 32-bit computers, copy the symantec_asdkcomcombine_8_0_x86.msi file.<br/> 
+            </li><li>
+              Use the following command line to install the COM file:<br/> 
+              msiexec /i Symantec_asdkcomcombine_8_0_x64.msi skipaim=true. 
+            </li></ol>
+        </p>
+        <p>
+          <div class="alert"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"><img class="note" title="Note" src="../icons/alert_note.gif" /><b>Note:</b></th></tr><tr><td>
+            All prerequisites for the remote computer are identical to those indicated above for the normal
+            COM installation process.
+          </td></tr></table></div>
+        </p>
+      </div>
+
+  
+</div><div id="footer"><div class="footerLine"><img width="100%" height="3px" src="../icons/footer.gif" title="Footer image" /></div><A NAME="feedback"></A><span id="fb" class="feedbackcss" style="display: none;"> </span>
+<p />Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:DL-AL-SDKSupport%40symantec.com?Subject=Symantec Administrator SDK 8.0">DL-AL-SDKSupport@symantec.com</a>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title;
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script> <p />Copyright © 2016, Symantec Corporation, All rights reserved</div></div></body></html>

@@ -1,0 +1,80 @@
+<!--
+SYMANTEC:     Copyright (c) 2016 Symantec Corporation. All rights reserved.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF SYMANTEC CORPORATION. USE, 
+DISCLOSURE OR REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF SYMANTEC
+CORPORATION.
+
+The Licensed Software and Documentation are deemed to be commercial computer software as defined
+in FAR 12.212 and subject to restricted rights as defined in FAR Section 52.227-19 "Commercial
+Computer Software - Restricted Rights" and DFARS 227.7202, Rights in "Commercial Computer Software
+or Commercial Computer Software Documentation", as applicable, and any successor regulations,
+whether delivered by Symantec as on premises or hosted services.  Any use, modification, reproduction
+release, performance, display or disclosure of the Licensed Software and Documentation by the U.S.
+Government shall be solely in accordance with the terms of this Agreement.
+-->
+
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" /><META NAME="save" CONTENT="history" /><title>Programming with the Deployment Solution ASDK</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" /><link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" /><script type="text/javascript" src="../scripts/EventUtilities.js"> </script><script type="text/javascript" src="../scripts/SplitScreen.js"> </script><script type="text/javascript" src="../scripts/Dropdown.js"> </script><script type="text/javascript" src="../scripts/script_manifold.js"> </script><script type="text/javascript" src="../scripts/script_feedBack.js"> </script><script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script><script type="text/javascript" src="../scripts/CommonUtilities.js"> </script><xml><MSHelp:Keyword Index="A" Term="badb44f2-ca5c-4109-a671-efefa39dd04b" /><MSHelp:Attr Name="RevisionNumber" Value="1" /><MSHelp:Attr Name="AssetID" Value="badb44f2-ca5c-4109-a671-efefa39dd04b" /><MSHelp:Attr Name="Abstract" Value="&#xD;&#xA;    The ASDK contains components that allow you to interact with the SMP Deployment Solution (DS).  In many ways&#xD;&#xA;    the DS ASDK is designed just like the other ASDK components, such as the NS ASDK and the Software Delivery&#xD;&#xA;    ASDK.  Like the ot ..." /><MSHelp:Attr Name="TopicType" Value="kbArticle" /><MSHelp:Attr Name="Locale" Value="en-us" /></xml></head><body><input type="hidden" id="userDataCache" class="userDataStyle" /><input type="hidden" id="hiddenScrollOffset" /><img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" title="Collapse image" /><img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" title="Expand Image" /><img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" /><img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" /><img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" /><img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" /><img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" title="Copy image" /><img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" title="CopyHover image" /><div id="header"><table id="topTable" cellspacing="0" cellpadding="0"><tr><td><span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0"><img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span></td></tr></table><div id="devlangsMenu"><input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on" onClick="SetLanguage(this)" /><label class="checkboxLabel" for="CSharpCheckbox">C#</label><br /></div><table id="bottomTable" cellpadding="0" cellspacing="0"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Symantec Administrator SDK 8.0</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle">Programming with the Deployment Solution ASDK</span></td></tr><tr id="headerTableRow3"><td align="left">
+  <span id="headfeedbackarea" class="feedbackhead">
+      <a href="javascript:SubmitFeedback('DL-AL-SDKSupport@symantec.com','Symantec Administrator SDK 8.0','','1.0.0.0','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback');">
+        
+        Send Feedback
+      </a>
+	</span>
+</td></tr></table><table id="gradientTable"><tr><td class="nsrBottom" background="../icons/gradient.gif" /></tr></table></div><div id="mainSection"><div id="mainBody"><div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" /><span style="color: DarkGray"> </span>
+  
+
+    <div class="introduction">
+    <p>
+    The ASDK contains components that allow you to interact with the SMP Deployment Solution (DS).  In many ways
+    the DS ASDK is designed just like the other ASDK components, such as the NS ASDK and the Software Delivery
+    ASDK.  Like the other ASDK components, you can access the DS ASDK through the COM layer, through the 
+    web service layer, or through the Command Line (CLI) layer.  And like the other ASDK components,
+    each of these layers exposes the API set through which you can perform and automate many
+    tasks in the SMP.
+    </p>
+    <p>
+    However, in terms of its API design, the DS ASDK differs from other ASDK components.  The other
+    ASDK components each have a defined set of public APIs.  Each of these APIs allows you to perform
+    some specific work in, or retrieve some specific date from, the SMP.  In the case of the ASDK components
+    for the core Notification Server, for example, there are several dozen APIs.  Each API represents
+    a different discrete task.
+    </p>
+    <p>
+    The DS ASDK component, however, is different.  Unlike the other ASDK components, the DS ASDK component
+    exoses only a single API, called
+    <span sdata="cer" target="M:Altiris.ASDK.DeploymentSolution.DSTaskManagementLib.RunDeploymentSolutionTask(System.String)"><a href="M_Altiris_ASDK_DeploymentSolution_DSTaskManagementLib_RunDeploymentSolutionTask.htm">RunDeploymentSolutionTask(String)</a></span>.
+    This API takes a singe argument, a string representing an XML fragment.  This XML fragment follows a
+    schema which allows you to both (1) define the task you want to perform in DS and (2) pass in all
+    the necessary and optional data inputs that the task may need.  This makes the DS ASDK highly
+    flexible and extensible.  
+    </p>
+    <p>
+    The DS ASDK was designed in this way because of the large and varying number and type of inputs
+    that a DS task might require.  Furthermore, collections of data about resources such as computers
+    may need to be passed into a single task, without disrupting the relations that subsets of the data
+    have with other subsets.  For programs running in C# or Java, it might make sense to create a separate
+    API for each task and handle the complex inputs using overloaded methods, complex data types that can
+    store mappings between key-value pairs, and the like.  However, as experienced users of the ASDK are
+    aware, the unique nature of the ASDK's multiple-interface design precludes those kinds of approaches.
+    Because the ASDK must support COM, web services and CLI, the scope and type of inputs into the
+    ASDK task are limited.  The solution in the case of the DS ASDK is to provide a single API that allows you
+    to pass in complex data and data mappings through the use of XML, rather than through multiple parameters
+    and data types.
+    </p>
+    <p>
+    For detailed information about the work that you can perform through the DS ASDK, as well as special COM
+    objects that you can use to create input XML and read output XML, please see <span sdata="link"><a href="6049c990-cc83-4103-82f6-410e357d4759.htm">this page</a></span>.
+    </p>
+    </div>
+    
+  
+</div><div id="footer"><div class="footerLine"><img width="100%" height="3px" src="../icons/footer.gif" title="Footer image" /></div><A NAME="feedback"></A><span id="fb" class="feedbackcss" style="display: none;"> </span>
+<p />Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:DL-AL-SDKSupport%40symantec.com?Subject=Symantec Administrator SDK 8.0">DL-AL-SDKSupport@symantec.com</a>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title;
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script> <p />Copyright © 2016, Symantec Corporation, All rights reserved</div></div></body></html>

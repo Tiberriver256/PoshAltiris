@@ -1,0 +1,443 @@
+<!--
+SYMANTEC:     Copyright (c) 2016 Symantec Corporation. All rights reserved.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF SYMANTEC CORPORATION. USE, 
+DISCLOSURE OR REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF SYMANTEC
+CORPORATION.
+
+The Licensed Software and Documentation are deemed to be commercial computer software as defined
+in FAR 12.212 and subject to restricted rights as defined in FAR Section 52.227-19 "Commercial
+Computer Software - Restricted Rights" and DFARS 227.7202, Rights in "Commercial Computer Software
+or Commercial Computer Software Documentation", as applicable, and any successor regulations,
+whether delivered by Symantec as on premises or hosted services.  Any use, modification, reproduction
+release, performance, display or disclosure of the Licensed Software and Documentation by the U.S.
+Government shall be solely in accordance with the terms of this Agreement.
+-->
+
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" /><META NAME="save" CONTENT="history" /><title>Deployment Solution COM Programming</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" /><link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" /><script type="text/javascript" src="../scripts/EventUtilities.js"> </script><script type="text/javascript" src="../scripts/SplitScreen.js"> </script><script type="text/javascript" src="../scripts/Dropdown.js"> </script><script type="text/javascript" src="../scripts/script_manifold.js"> </script><script type="text/javascript" src="../scripts/script_feedBack.js"> </script><script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script><script type="text/javascript" src="../scripts/CommonUtilities.js"> </script><xml><MSHelp:Keyword Index="A" Term="6049c990-cc83-4103-82f6-410e357d4759" /><MSHelp:Attr Name="RevisionNumber" Value="1" /><MSHelp:Attr Name="AssetID" Value="6049c990-cc83-4103-82f6-410e357d4759" /><MSHelp:Attr Name="Abstract" Value="&#xD;&#xA;      Welcome to the &quot;portal&quot; page for programming with the COM layer of the Deployment Solution ASDK.&#xD;&#xA;      The following tables summarize the various discrete units of work you can perform in Deployment&#xD;&#xA;      Solution using the ASDK.  They also ..." /><MSHelp:Attr Name="TopicType" Value="kbArticle" /><MSHelp:Attr Name="Locale" Value="en-us" /></xml></head><body><input type="hidden" id="userDataCache" class="userDataStyle" /><input type="hidden" id="hiddenScrollOffset" /><img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" title="Collapse image" /><img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" title="Expand Image" /><img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" /><img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" /><img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" /><img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" /><img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" title="Copy image" /><img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" title="CopyHover image" /><div id="header"><table id="topTable" cellspacing="0" cellpadding="0"><tr><td><span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0"><img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span></td></tr></table><div id="devlangsMenu"><input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on" onClick="SetLanguage(this)" /><label class="checkboxLabel" for="CSharpCheckbox">C#</label><br /></div><table id="bottomTable" cellpadding="0" cellspacing="0"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Symantec Administrator SDK 8.0</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle">Deployment Solution COM Programming</span></td></tr><tr id="headerTableRow3"><td align="left">
+  <span id="headfeedbackarea" class="feedbackhead">
+      <a href="javascript:SubmitFeedback('DL-AL-SDKSupport@symantec.com','Symantec Administrator SDK 8.0','','1.0.0.0','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback');">
+        
+        Send Feedback
+      </a>
+	</span>
+</td></tr></table><table id="gradientTable"><tr><td class="nsrBottom" background="../icons/gradient.gif" /></tr></table></div><div id="mainSection"><div id="mainBody"><div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" /><span style="color: DarkGray"> </span>
+  
+
+    <div class="introduction">
+      
+      <p>
+      Welcome to the "portal" page for programming with the COM layer of the Deployment Solution ASDK.
+      The following tables summarize the various discrete units of work you can perform in Deployment
+      Solution using the ASDK.  They also list any applicable "input helper" and "output helper" classes
+      that you can use in VBScript code (or other COM-compatible language) that you write.  There are
+      also links and details about sample input XML and sample scripts that show how to perform various tasks.
+      </p>
+      <p>
+      The input helper classes make it easier to construct the input XML string
+      that the main API
+      (<span sdata="cer" target="M:Altiris.ASDK.DeploymentSolution.COM.DSTaskManagement.RunDeploymentSolutionTask(System.String)"><a href="M_Altiris_ASDK_DeploymentSolution_COM_DSTaskManagement_RunDeploymentSolutionTask.htm">RunDeploymentSolutionTask(String)</a></span>)
+      takes as its sole parameter.  The output helper classes retrieve the data returned from the call
+      to <span class="code">RunDeploymentSolutionTask</span> -- which is also in the form of XML --
+      and parse and store the returned data into fields in the helper class.  In that way,
+      you can more easily access a piece of data returned from an earlier task, to use as input
+      for a subsequent task.
+      </p>
+      <p>
+      The first table shows how you can interact with <i>settings</i> using the Deployment Solution ASDK.
+      The second table lists the ways in which you can interact with <i>resources</i>.  The third table details the
+      various <i>tasks</i> that you can create.
+      </p>
+      <p>
+        <div class="alert"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"><img class="note" title="Note" src="../icons/alert_note.gif" /><b>Note:</b></th></tr><tr><td>
+          <p>
+          Symantec recommends you use input helper classes to facilitate the creation of the input XML string that is to be
+          passed into the <span class="code">RunDeploymentSolutionTask</span> API.  However, you can find examples of how to call
+          <span class="code">RunDeploymentSolutionTask</span> without using input helper classes -- i.e., using hand-coded XML
+          strings directly as your input -- in the sample script
+          [ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\RunDeploymentSolutionTask.vbs.
+          </p>
+        </td></tr></table></div>
+      </p>
+    </div>
+
+    <a name="SettingsTable" /><h1 class="heading"><span onclick="ExpandCollapse(sectionToggle0)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggle0, event)" tabindex="0"><img id="sectionToggle0" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Interacting with Settings using the Deployment Solution ASDK</span></h1><div id="sectionSection0" class="section" name="collapseableSection" style="">
+        <p>
+          <div class="caption"></div><div class="tableSection"><table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+            
+              <tr>
+                <th>What Do I Want to Do?</th>
+                <th>Action Type</th>
+                <th>Input Helper Class</th>
+                <th>Input XML</th>
+                <th>Output Helper Class</th>
+                <th>Example Script</th>
+              </tr>
+            
+            <tr>
+              <td>Add a new driver</td>
+              <td>Add</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_DriverManagement"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_DriverManagement.htm">DSH_DriverManagement</a></span></td>
+              <td><span sdata="link"><a href="d3612ffc-6a56-4473-ac7f-b8a3c3961f9e.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_DriverManagement"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_DriverManagement.htm">DSOH_DriverManagement</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\DriverManagement.vbs</td>
+            </tr>
+            <tr>
+              <td>Create an OEM extension</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_OEMExtension"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_OEMExtension.htm">DSH_OEMExtension</a></span></td>
+              <td><span sdata="link"><a href="ac7fabec-8735-4128-a715-a6f04bc1e3aa.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_OEMExtension"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_OEMExtension.htm">DSOH_OEMExtension</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\OEMExtension.vbs</td>
+            </tr>
+            <tr>
+              <td>Get a particular OEM extension</td>
+              <td>Get</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_OEMExtension"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_OEMExtension.htm">DSH_OEMExtension</a></span></td>
+              <td><span sdata="link"><a href="178ab27a-c002-4c17-9078-5c1368a998ca.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_OEMExtension"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_OEMExtension.htm">DSOH_OEMExtension</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\OEMExtension.vbs</td>
+            </tr>
+            <tr>
+              <td>Get all OEM extensions</td>
+              <td>GetAll</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_OEMExtension"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_OEMExtension.htm">DSH_OEMExtension</a></span></td>
+              <td><span sdata="link"><a href="8fabb690-400c-4f41-83f3-e06eb436800e.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_OEMExtension"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_OEMExtension.htm">DSOH_OEMExtension</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\OEMExtension.vbs</td>
+            </tr>
+            <tr>
+              <td>Create a pre-boot configuration</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_PrebootConfigurations"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_PrebootConfigurations.htm">DSH_PrebootConfigurations</a></span></td>
+              <td><span sdata="link"><a href="88e40e5d-b22c-499f-9262-0bb1b8c2bb5e.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_PrebootConfigurations"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_PrebootConfigurations.htm">DSOH_PrebootConfigurations</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\PrebootConfigurations.vbs</td>
+            </tr>
+            <tr>
+              <td>Re-create a pre-boot configuration</td>
+              <td>Recreate</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_PrebootConfigurations"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_PrebootConfigurations.htm">DSH_PrebootConfigurations</a></span></td>
+              <td><span sdata="link"><a href="e2c08ef0-bef6-4294-8e4a-ba6d9df2a59c.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_PrebootConfigurations"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_PrebootConfigurations.htm">DSOH_PrebootConfigurations</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\PrebootConfigurations.vbs</td>
+            </tr>
+            <tr>
+              <td>Get a particular pre-boot configuration</td>
+              <td>Get</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_PrebootConfigurations"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_PrebootConfigurations.htm">DSH_PrebootConfigurations</a></span></td>
+              <td><span sdata="link"><a href="5f502a14-9eaa-4752-a5b4-e9e6a8d51c5b.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_PrebootConfigurations"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_PrebootConfigurations.htm">DSOH_PrebootConfigurations</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\PrebootConfigurations.vbs</td>
+            </tr>
+            <tr>
+              <td>Get all pre-boot configurations</td>
+              <td>GetAll</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_PrebootConfigurations"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_PrebootConfigurations.htm">DSH_PrebootConfigurations</a></span></td>
+              <td><span sdata="link"><a href="f4a2c663-fe2e-4ae8-8db1-9e104fdef64b.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_PrebootConfigurations"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_PrebootConfigurations.htm">DSOH_PrebootConfigurations</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\PrebootConfigurations.vbs</td>
+            </tr>
+            <tr>
+              <td>Create license keys for one or more operating systems</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_OSLicenseKeyManagement"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_OSLicenseKeyManagement.htm">DSH_OSLicenseKeyManagement</a></span></td>
+              <td><span sdata="link"><a href="246f5f26-1d6a-4c62-bf01-c1be42a1180b.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_OSLicenseKeys"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_OSLicenseKeys.htm">DSOH_OSLicenseKeys</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\OSLicenseKeyManagement.vbs</td>
+            </tr>
+            <tr>
+              <td>Get a particular license key for an operating systems</td>
+              <td>Get</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_OSLicenseKeyManagement"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_OSLicenseKeyManagement.htm">DSH_OSLicenseKeyManagement</a></span></td>
+              <td><span sdata="link"><a href="3cb9ebd0-0d15-4673-b6b2-89f5fd470aa4.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_OSLicenseKeys"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_OSLicenseKeys.htm">DSOH_OSLicenseKeys</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\OSLicenseKeyManagement.vbs</td>
+            </tr>
+            <tr>
+              <td>Get all operating system license keys</td>
+              <td>GetAll</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_OSLicenseKeyManagement"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_OSLicenseKeyManagement.htm">DSH_OSLicenseKeyManagement</a></span></td>
+              <td><span sdata="link"><a href="c86508c1-f74e-4793-b226-0334c4e435de.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_OSLicenseKeys"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_OSLicenseKeys.htm">DSOH_OSLicenseKeys</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\OSLicenseKeyManagement.vbs</td>
+            </tr>
+            <tr>
+              <td>Create a system configuration</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_SystemConfiguration"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_SystemConfiguration.htm">DSH_SystemConfiguration</a></span></td>
+              <td><span sdata="link"><a href="622f8990-ed34-4db3-9974-b3815cc6c836.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_SystemConfigurationManagement"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_SystemConfigurationManagement.htm">DSOH_SystemConfigurationManagement</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\SystemConfiguration.vbs</td>
+            </tr>
+            <tr>
+              <td>Get a particular system configuration</td>
+              <td>Get</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_SystemConfiguration"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_SystemConfiguration.htm">DSH_SystemConfiguration</a></span></td>
+              <td><span sdata="link"><a href="c1d71262-03e3-42e2-9790-e025ee14f79a.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_SystemConfigurationManagement"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_SystemConfigurationManagement.htm">DSOH_SystemConfigurationManagement</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\SystemConfiguration.vbs</td>
+            </tr>
+            <tr>
+              <td>Get all system configurations</td>
+              <td>GetAll</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_SystemConfiguration"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_SystemConfiguration.htm">DSH_SystemConfiguration</a></span></td>
+              <td><span sdata="link"><a href="09eec95c-0076-4eda-bc23-023ed0dd2930.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_SystemConfigurationManagement"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_SystemConfigurationManagement.htm">DSOH_SystemConfigurationManagement</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\SystemConfiguration.vbs</td>
+            </tr>
+            <tr>
+              <td>Apply image multicast settings</td>
+              <td>apply</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_ImageMulticastingSetting"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_ImageMulticastingSetting.htm">DSH_ImageMulticastingSetting</a></span></td>
+              <td><span sdata="link"><a href="6854ff94-6eef-43fe-9c5a-3dc50dd5f9e8.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_ImageMulticastingSetting"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_ImageMulticastingSetting.htm">DSOH_ImageMulticastingSetting</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\ImageMulticastingSetting.vbs</td>
+            </tr>
+            <tr>
+              <td>Apply PXE server settings</td>
+              <td>Apply</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_PXEServerConfiguration"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_PXEServerConfiguration.htm">DSH_PXEServerConfiguration</a></span></td>
+              <td><span sdata="link"><a href="3669a78a-f139-4f93-b854-2367bb84d051.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_PXEServerConfiguration"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_PXEServerConfiguration.htm">DSOH_PXEServerConfiguration</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\PSEServerConfiguration.vbs</td>
+            </tr>
+          </table></div>
+        </p>
+      </div>
+    
+    <a name="ResourcesTable" /><h1 class="heading"><span onclick="ExpandCollapse(sectionToggle1)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggle1, event)" tabindex="0"><img id="sectionToggle1" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Interacting with Resources using the Deployment Solution ASDK</span></h1><div id="sectionSection1" class="section" name="collapseableSection" style="">
+        <p>
+          <div class="caption"></div><div class="tableSection"><table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+            
+              <tr>
+                <th>What Do I Want to Do?</th>
+                <th>Action Type</th>
+                <th>Input Helper Class</th>
+                <th>Input XML</th>
+                <th>Output Helper Class</th>
+                <th>Example Script</th>
+              </tr>
+            
+            <tr>
+              <td>Get a particular operating system file</td>
+              <td>Get</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_OSFileResource"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_OSFileResource.htm">DSH_OSFileResource</a></span></td>
+              <td><span sdata="link"><a href="e90ad9c7-d2b4-4b0e-83c1-f2b7b56aacfb.htm">sample</a></span>, <span sdata="link"><a href="0bef2665-d7b5-441b-8039-f843ed139fa1.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_OSFileResource"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_OSFileResource.htm">DSOH_OSFileResource</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\OSFileResource.vbs</td>
+            </tr>
+            <tr>
+              <td>Get all operating system files available</td>
+              <td>GetAll</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_OSFileResource"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_OSFileResource.htm">DSH_OSFileResource</a></span></td>
+              <td><span sdata="link"><a href="c650bf2b-5b20-4a73-a2de-c10e44629df5.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_OSFileResource"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_OSFileResource.htm">DSOH_OSFileResource</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\OSFileResource.vbs</td>
+            </tr>
+            <tr>
+              <td>Get a particular image</td>
+              <td>Get</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_ImageFileResource"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_ImageFileResource.htm">DSH_ImageFileResource</a></span></td>
+              <td><span sdata="link"><a href="7a904a99-bcdb-47db-8873-f284f96a3eda.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_ImageFile"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_ImageFile.htm">DSOH_ImageFile</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\ImageFileResource.vbs</td>
+            </tr>
+            <tr>
+              <td>Get all images available</td>
+              <td>GetAll</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_ImageFileResource"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_ImageFileResource.htm">DSH_ImageFileResource</a></span></td>
+              <td><span sdata="link"><a href="985feb65-9ed0-4280-a8ed-cf677924e01a.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_ImageFile"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_ImageFile.htm">DSOH_ImageFile</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\ImageFileResource.vbs</td>
+            </tr>
+            <tr>
+              <td>Get a particular PC Transplant personality package</td>
+              <td>Get</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_GetPCTPackageList"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_GetPCTPackageList.htm">DSH_GetPCTPackageList</a></span></td>
+              <td><span sdata="link"><a href="19b92866-92b1-4c2e-a343-b0a2b2d3180f.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_PCT"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_PCT.htm">DSOH_PCT</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\GetPCTPackageList.vbs</td>
+            </tr>
+            <tr>
+              <td>Get all available PC Transplant personality packages</td>
+              <td>GetAll</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_GetPCTPackageList"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_GetPCTPackageList.htm">DSH_GetPCTPackageList</a></span></td>
+              <td><span sdata="link"><a href="fa96a337-3e81-43cb-a348-b4ed4462c395.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_PCT"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_PCT.htm">DSOH_PCT</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\GetPCTPackageList.vbs</td>
+            </tr>
+            <tr>
+              <td>Get a particular computer</td>
+              <td>Get</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_EnumerateComputers"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_EnumerateComputers.htm">DSH_EnumerateComputers</a></span></td>
+              <td><span sdata="link"><a href="50b6a8d4-62fa-4a2d-84f4-d6ca53b076ad.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_EnumerateComputers"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_EnumerateComputers.htm">DSOH_EnumerateComputers</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\EnumerateComputers.vbs</td>
+            </tr>
+            <tr>
+              <td>Get all computers available</td>
+              <td>GetAll</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_EnumerateComputers"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_EnumerateComputers.htm">DSH_EnumerateComputers</a></span></td>
+              <td><span sdata="link"><a href="ecc0128a-393b-44ab-9dd2-e0036495e739.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_EnumerateComputers"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_EnumerateComputers.htm">DSOH_EnumerateComputers</a></span></td>
+               <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\EnumerateComputers.vbs</td>
+            </tr>
+            <tr>
+              <td>Add a set of predefined computers</td>
+              <td>Add</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_AddPredefinedComputers"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_AddPredefinedComputers.htm">DSH_AddPredefinedComputers</a></span></td>
+              <td><span sdata="link"><a href="475eb162-c780-4111-a449-93cdef0bf3b3.htm">sample</a></span>, <span sdata="link"><a href="ce91cb42-9718-4f2c-a2ab-ba3a7e6cb146.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_PredefinedComputers"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_PredefinedComputers.htm">DSOH_PredefinedComputers</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\AddPredefinedComputers.vbs</td>
+            </tr>
+          </table></div>
+        </p>
+      </div>
+    
+    <a name="TasksTable" /><h1 class="heading"><span onclick="ExpandCollapse(sectionToggle2)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggle2, event)" tabindex="0"><img id="sectionToggle2" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Creating Tasks using the Deployment Solution ASDK</span></h1><div id="sectionSection2" class="section" name="collapseableSection" style="">
+        <p>
+          <div class="alert"><table width="100%" cellspacing="0" cellpadding="0"><tr><th align="left"><img class="note" title="Caution note" src="../icons/alert_caution.gif" /><b>Caution:</b></th></tr><tr><td>
+            <p>
+            The Deployment Solution ASDK creates Tasks in the Symantec Management Platform that, when executed using
+            the SMP Task Server, will perform the actions described below.  It is important to
+            understand that the Deployment Solution ASDK only <b>creates</b>
+            these tasks -- it does not <b>run</b> the tasks once they are
+            created.  If you want to run one of these tasks, you can call the
+            <span sdata="cer" target="M:Altiris.ASDK.Task.TaskManagement.ExecuteTask(System.Guid,System.String,System.String)"><a href="M_Altiris_ASDK_Task_TaskManagement_ExecuteTask.htm">ExecuteTask(Guid, String, String)</a></span>
+            API from the ASDK's Task Management library.  Or, you can simply run the Task directly from the
+            SMP Console.
+            </p>
+          </td></tr></table></div>
+        </p>
+        <p>
+          <div class="caption"></div><div class="tableSection"><table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+            
+              <tr>
+                <th>What Do I Want to Do?</th>
+                <th>Action Type</th>
+                <th>Input Helper Class</th>
+                <th>Input XML</th>
+                <th>Output Helper Class</th>
+                <th>Example Script</th>
+              </tr>
+            
+            <tr>
+              <td>Apply a system configuration</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_ApplySystemConfiguration"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_ApplySystemConfiguration.htm">DSH_ApplySystemConfiguration</a></span></td>
+              <td><span sdata="link"><a href="688ac81e-2cad-4188-9400-a4d973571e3c.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_ApplySystemConfiguration"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_ApplySystemConfiguration.htm">DSOH_ApplySystemConfiguration</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\ApplySystemConfiguration.vbs</td>
+            </tr>
+            <tr>
+              <td>Capture a personality</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_CapturePersonality"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_CapturePersonality.htm">DSH_CapturePersonality</a></span></td>
+              <td><span sdata="link"><a href="89528318-d511-47c6-994f-3a47a0a46896.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_CapturePersonality"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_CapturePersonality.htm">DSOH_CapturePersonality</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\CapturePersonality.vbs</td>
+            </tr>
+            <tr>
+              <td>Distribute a personality</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_DistributePersonality"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_DistributePersonality.htm">DSH_DistributePersonality</a></span></td>
+              <td><span sdata="link"><a href="be4ba157-e010-43c3-aeb1-0760b06cd668.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_DistributePersonality"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_DistributePersonality.htm">DSOH_DistributePersonality</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\CapturePersonality.vbs</td>
+            </tr>
+            <tr>
+              <td>Erase a disk</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_EraseDisk"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_EraseDisk.htm">DSH_EraseDisk</a></span></td>
+              <td><span sdata="link"><a href="33922c91-7834-424f-920d-81ac2709f2b9.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_EraseDisk"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_EraseDisk.htm">DSOH_EraseDisk</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\EraseDisk.vbs</td>
+            </tr>
+            <tr>
+              <td>Install LINUX operating system</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_InstallLinuxOS"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_InstallLinuxOS.htm">DSH_InstallLinuxOS</a></span></td>
+              <td><span sdata="link"><a href="6700bf56-849e-43fe-8c07-eb4bff36fb4c.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_InstallLinuxOS"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_InstallLinuxOS.htm">DSOH_InstallLinuxOS</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\InstallLinuxOS.vbs</td>
+            </tr>
+            <tr>
+              <td>Partition a disk</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_PartitionDisk"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_PartitionDisk.htm">DSH_PartitionDisk</a></span></td>
+              <td><span sdata="link"><a href="20ecb3cd-8efe-4d57-9506-de026d1c201a.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_PartitionDisk"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_PartitionDisk.htm">DSOH_PartitionDisk</a></span></td>
+             <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\PartitionDisk.vbs</td>
+            </tr>
+            <tr>
+              <td>Prepare for image capture</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_PrepareForImageCapture"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_PrepareForImageCapture.htm">DSH_PrepareForImageCapture</a></span></td>
+              <td><span sdata="link"><a href="7a83b318-770a-473d-bf23-96fe85064c6d.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_PrepareForImageCapture"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_PrepareForImageCapture.htm">DSOH_PrepareForImageCapture</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\PrepareForImageCapture.vbs</td>
+            </tr>
+            <tr>
+              <td>Copy a file</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_CopyFile"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_CopyFile.htm">DSH_CopyFile</a></span></td>
+              <td><span sdata="link"><a href="c45e1370-02e9-4c16-84be-d5250b231f1f.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_CopyFile"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_CopyFile.htm">DSOH_CopyFile</a></span></td>
+             <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\CopyFile.vbs</td>
+            </tr>
+            <tr>
+              <td>Install Windows operating system</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_InstallWindowsOS"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_InstallWindowsOS.htm">DSH_InstallWindowsOS</a></span></td>
+              <td><span sdata="link"><a href="bafa021e-75cc-4869-be4d-1b448ac2cbf7.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_InstallWindowsOS"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_InstallWindowsOS.htm">DSOH_InstallWindowsOS</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS</td>
+            </tr>
+            <tr>
+              <td>Create an image</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_CreateImage"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_CreateImage.htm">DSH_CreateImage</a></span></td>
+              <td><span sdata="link"><a href="fbf9b045-2fc7-4500-9ff0-c418d3987c43.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_CreateImage"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_CreateImage.htm">DSOH_CreateImage</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\CreateImage.vbs</td>
+            </tr>
+            <tr>
+              <td>Deploy an image</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_DeployImage"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_DeployImage.htm">DSH_DeployImage</a></span></td>
+              <td><span sdata="link"><a href="11a9023e-56f4-46a5-8d68-ab99d55dc695.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_DeployImage"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_DeployImage.htm">DSOH_DeployImage</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\DeployImage.vbs</td>
+            </tr>
+            <tr>
+              <td>Reboot to a given source</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_RebootTo"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_RebootTo.htm">DSH_RebootTo</a></span></td>
+              <td><span sdata="link"><a href="f6706089-07d8-454e-a119-cc25d93c45b8.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_RebootTo"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_RebootTo.htm">DSOH_RebootTo</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\RebootTo.vbs</td>
+            </tr>
+            <tr>
+              <td>Restore a backup image</td>
+              <td>Create</td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSH_RestoreBackupImage"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSH_RestoreBackupImage.htm">DSH_RestoreBackupImage</a></span></td>
+              <td><span sdata="link"><a href="893ab005-8a01-4832-ad0a-aa799eb709b2.htm">sample</a></span></td>
+              <td><span sdata="cer" target="T:Altiris.ASDK.DeploymentSolution.COM.DSOH_RestoreBackupImage"><a href="T_Altiris_ASDK_DeploymentSolution_COM_DSOH_RestoreBackupImage.htm">DSOH_RestoreBackupImage</a></span></td>
+              <td>[ASDK Intallation Folder]\Samples\DSTaskManagement\VBS\RestoreBackImage.vbs</td>
+            </tr>
+          </table></div>
+        </p>
+      </div>
+    
+
+  
+</div><div id="footer"><div class="footerLine"><img width="100%" height="3px" src="../icons/footer.gif" title="Footer image" /></div><A NAME="feedback"></A><span id="fb" class="feedbackcss" style="display: none;"> </span>
+<p />Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:DL-AL-SDKSupport%40symantec.com?Subject=Symantec Administrator SDK 8.0">DL-AL-SDKSupport@symantec.com</a>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title;
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script> <p />Copyright © 2016, Symantec Corporation, All rights reserved</div></div></body></html>

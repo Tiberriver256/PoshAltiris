@@ -1,0 +1,161 @@
+<!--
+SYMANTEC:     Copyright (c) 2016 Symantec Corporation. All rights reserved.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF SYMANTEC CORPORATION. USE, 
+DISCLOSURE OR REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF SYMANTEC
+CORPORATION.
+
+The Licensed Software and Documentation are deemed to be commercial computer software as defined
+in FAR 12.212 and subject to restricted rights as defined in FAR Section 52.227-19 "Commercial
+Computer Software - Restricted Rights" and DFARS 227.7202, Rights in "Commercial Computer Software
+or Commercial Computer Software Documentation", as applicable, and any successor regulations,
+whether delivered by Symantec as on premises or hosted services.  Any use, modification, reproduction
+release, performance, display or disclosure of the Licensed Software and Documentation by the U.S.
+Government shall be solely in accordance with the terms of this Agreement.
+-->
+
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" /><META NAME="save" CONTENT="history" /><title>Using the ASDK</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" /><link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" /><script type="text/javascript" src="../scripts/EventUtilities.js"> </script><script type="text/javascript" src="../scripts/SplitScreen.js"> </script><script type="text/javascript" src="../scripts/Dropdown.js"> </script><script type="text/javascript" src="../scripts/script_manifold.js"> </script><script type="text/javascript" src="../scripts/script_feedBack.js"> </script><script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script><script type="text/javascript" src="../scripts/CommonUtilities.js"> </script><xml><MSHelp:Keyword Index="A" Term="945bc946-8ab0-43a6-85b6-c2504df80d6f" /><MSHelp:Attr Name="RevisionNumber" Value="1" /><MSHelp:Attr Name="AssetID" Value="945bc946-8ab0-43a6-85b6-c2504df80d6f" /><MSHelp:Attr Name="Abstract" Value="&#xD;&#xA;        The Symantec Administrator Software Development Kit (ASDK) provides capabilities&#xD;&#xA;        for automating and customizing Symantec Management Platform products. The Notification&#xD;&#xA;        Server, the Site Server*, and the Symantec Management  ..." /><MSHelp:Attr Name="TopicType" Value="kbArticle" /><MSHelp:Attr Name="Locale" Value="en-us" /></xml></head><body><input type="hidden" id="userDataCache" class="userDataStyle" /><input type="hidden" id="hiddenScrollOffset" /><img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" title="Collapse image" /><img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" title="Expand Image" /><img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" /><img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" /><img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" /><img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" /><img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" title="Copy image" /><img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" title="CopyHover image" /><div id="header"><table id="topTable" cellspacing="0" cellpadding="0"><tr><td><span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0"><img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span></td></tr></table><div id="devlangsMenu"><input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on" onClick="SetLanguage(this)" /><label class="checkboxLabel" for="CSharpCheckbox">C#</label><br /></div><table id="bottomTable" cellpadding="0" cellspacing="0"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Symantec Administrator SDK 8.0</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle">Using the ASDK</span></td></tr><tr id="headerTableRow3"><td align="left">
+  <span id="headfeedbackarea" class="feedbackhead">
+      <a href="javascript:SubmitFeedback('DL-AL-SDKSupport@symantec.com','Symantec Administrator SDK 8.0','','1.0.0.0','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback');">
+        
+        Send Feedback
+      </a>
+	</span>
+</td></tr></table><table id="gradientTable"><tr><td class="nsrBottom" background="../icons/gradient.gif" /></tr></table></div><div id="mainSection"><div id="mainBody"><div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" /><span style="color: DarkGray"> </span>
+  
+
+    <div class="introduction">
+      <p>
+        The Symantec Administrator Software Development Kit (ASDK) provides capabilities
+        for automating and customizing Symantec Management Platform products. The Notification
+        Server, the Site Server*, and the Symantec Management Agent** are exposed through Web
+        services, Visual Basic Script (VBS), and a command-line interface (CLI).
+      </p>
+      <p>
+        *Beginning with NS 7.7, Task Services and Package Services are run on Site Servers.
+        A Site Server can be dedicated to Task Services alone, to Package Services alone, or
+        to both services.
+      </p>
+      <p>
+        **The Agent that is installed on client computers (or endpoints) is the Symantec
+        Management Agent on Windows computers or the NS Agent for UNIX on UNIX computers.
+      </p>
+      
+    </div>
+
+    <a name="Section1" /><h1 class="heading"><span onclick="ExpandCollapse(sectionToggle0)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggle0, event)" tabindex="0"><img id="sectionToggle0" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Introduction</span></h1><div id="sectionSection0" class="section" name="collapseableSection" style="">
+        <p>
+          The Symantec ASDK provides APIs that you can use to automate and customize the Symantec
+          Management Platform. APIs may be called through <span sdata="link"><a href="09dc6167-3b69-4f6c-b564-e57d5aa077a5.htm">Web services</a></span>,
+          <span sdata="link"><a href="0c2d76b8-5625-450e-90ae-fa6b6bc482d9.htm">COM</a></span> (e.g., for VBScript), and
+          the Windows <span sdata="link"><a href="befabf65-3ce5-4d6b-a62b-f99e7a61a3a2.htm">command line (CLI)</a></span>.
+          APIs are available for the following:"</p>
+        <p>
+          <ul><li>Notification Server</li><li>Task Server</li><li>Software Delivery Solution</li><li>Symantec Management Agent</li></ul>
+        </p>
+        <p>
+          To use this ASDK productively, you should read this documentation and then review the
+          <span sdata="link"><a href="610ade3a-b168-4aa7-929b-b28dcd8d41ed.htm">Example scenarios</a></span>.</p>
+      </div>
+
+    <a name="Section2" /><h1 class="heading"><span onclick="ExpandCollapse(sectionToggle1)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggle1, event)" tabindex="0"><img id="sectionToggle1" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Programming Options</span></h1><div id="sectionSection1" class="section" name="collapseableSection" style="">
+        <p>
+          The ASDK offers a variety of programming options to meet the needs and skills of a
+          diverse group of administrators. These programming options come in the form of three
+          interface layers built in to every component of the ASDK: a Web service layer, a COM layer,
+          and a command-line interface (CLI) layer. Each layer potentially provides a different
+          programming language option and a different execution environment. A server execution
+          environment means that your programs must run directly on the server computer. A remote
+          execution environment means that your programs can run from any computer on the network
+          and target the server computer. When determining which layer to use, consider both the
+          programming language and the execution environment.
+        </p>
+        <p>
+          To help you choose your best option, the following table breaks down the three interface
+          layers in terms of some possible programming languages, the language used for examples
+          in the ASDK documentation, and the available execution environments.
+        </p>
+        <p>
+          <div class="caption"></div><div class="tableSection"><table width="50%" cellspacing="2" cellpadding="5" frame="lhs">
+            
+              <tr>
+                <th>Layer</th>
+                <th>Possible Languages</th>
+                <th>Language of ASDK Examples</th>
+                <th>Execution Environment</th>
+              </tr>
+            
+            <tr>
+              <td>Web Service</td>
+              <td>C#, Visual Basic</td>
+              <td>C#</td>
+              <td>Server, Remote</td>
+            </tr>
+            <tr>
+              <td>COM</td>
+              <td>Visual Basic script</td>
+              <td>Visual Basic script</td>
+              <td>Server, Remote</td>
+            </tr>
+            <tr>
+              <td>CLI</td>
+              <td>CLI commands</td>
+              <td>CLI commands</td>
+              <td>Server</td>
+            </tr>
+          </table></div>          
+        </p>        
+      </div>
+
+    <a name="Section3" /><h1 class="heading"><span onclick="ExpandCollapse(sectionToggle2)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggle2, event)" tabindex="0"><img id="sectionToggle2" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Programming Execution Environment</span></h1><div id="sectionSection2" class="section" name="collapseableSection" style="">
+        <p>
+          The execution environment determines how your program communicates with the server,
+          which depends on which ASDK layer your program is using. Each of the three programming
+          layers routes commands through a central ASDK layer which is housed on the server
+          computer. (See the section <span sdata="link"><span class="nolink">How Is It Built?</span></span> in <span sdata="link"><a href="4a921e38-3368-47d8-b74e-2e59b771200f.htm#How Is It Built?">Getting Started with the ASDK</a></span> for further explanation.) The CLI layer communicates directly with
+          the main ASDK layer and is therefore a Server-only option. The web service layer also
+          communicates directly with the main ASDK layer; however, your program can communicate
+          with the web service layer from any other computer on the network. Therefore, your program
+          can access the web service from the server itself, or, given proper credentials, it can
+          access the web service from a remote computer as well. The COM layer can access the main
+          ASDK layer either through the web service layer, or directly. Most often, COM programs are
+          routed through the web service layer, thereby providing as much remoting potential as
+          programming with the web service layer. Alternatively, COM programs can also route commands
+          directly to the main ASDK layer. This feature can save on overhead, but also restricts your
+          programs to run on the server directly. Furthermore, this feature is not yet available in
+          all ASDK components.
+        </p>
+        <p>
+          Further information about providing proper credentials for the web service layer and choosing
+          local or remote routing in the COM layer are provided in the <span sdata="link"><a href="26c7195a-dcd1-40d6-988c-5c8df638ae5d.htm">Programming Guides</a></span> section.
+        </p>
+      </div>
+
+    <a name="Section4" /><h1 class="heading"><span onclick="ExpandCollapse(sectionToggle3)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggle3, event)" tabindex="0"><img id="sectionToggle3" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />How to Proceed</span></h1><div id="sectionSection3" class="section" name="collapseableSection" style="">
+        <p>
+          Now that you have a general understanding of what the ASDK is and what it is for, proceed
+          in the following order:
+        </p>
+        <p>
+          <ol><li>Install the ASDK.</li><li>Review the ASDK architecture.</li><li>Review your programming options.</li><li>Review examples to get you started.</li><li>Read a few helpful tips.</li></ol>
+        </p>
+        <p>
+          After you have completed those steps, you should browse the <span sdata="link"><a href="338ff257-09bc-45cf-babe-bfa628fe803b.htm">Application Programming Interfaces</a></span> (APIs). The API section gives a complete overview of all of the available
+          APIs and contains example code for each programming interface. This will be invaluable, as you write your own
+          code, for identifying the commands the ASDK offers.
+        </p>
+        <p>
+          When you are ready to create you own applications, read the portions of the <span sdata="link"><a href="26c7195a-dcd1-40d6-988c-5c8df638ae5d.htm">Programming Guides</a></span> that pertain to the ASDK layer you choose to program with. This will help you start programming
+          for the interface you choose: Web Service (C#), COM, or CLI.</p>
+      </div>
+
+  
+</div><div id="footer"><div class="footerLine"><img width="100%" height="3px" src="../icons/footer.gif" title="Footer image" /></div><A NAME="feedback"></A><span id="fb" class="feedbackcss" style="display: none;"> </span>
+<p />Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:DL-AL-SDKSupport%40symantec.com?Subject=Symantec Administrator SDK 8.0">DL-AL-SDKSupport@symantec.com</a>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title;
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script> <p />Copyright © 2016, Symantec Corporation, All rights reserved</div></div></body></html>

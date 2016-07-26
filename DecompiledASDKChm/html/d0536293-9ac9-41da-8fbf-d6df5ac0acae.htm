@@ -1,0 +1,187 @@
+<!--
+SYMANTEC:     Copyright (c) 2016 Symantec Corporation. All rights reserved.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF SYMANTEC CORPORATION. USE, 
+DISCLOSURE OR REPRODUCTION IS PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF SYMANTEC
+CORPORATION.
+
+The Licensed Software and Documentation are deemed to be commercial computer software as defined
+in FAR 12.212 and subject to restricted rights as defined in FAR Section 52.227-19 "Commercial
+Computer Software - Restricted Rights" and DFARS 227.7202, Rights in "Commercial Computer Software
+or Commercial Computer Software Documentation", as applicable, and any successor regulations,
+whether delivered by Symantec as on premises or hosted services.  Any use, modification, reproduction
+release, performance, display or disclosure of the Licensed Software and Documentation by the U.S.
+Government shall be solely in accordance with the terms of this Agreement.
+-->
+
+<html xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" /><META NAME="save" CONTENT="history" /><title>Agent Push Demonstration</title><link rel="stylesheet" type="text/css" href="../styles/presentation.css" /><link rel="stylesheet" type="text/css" href="ms-help://Hx/HxRuntime/HxLink.css" /><script type="text/javascript" src="../scripts/EventUtilities.js"> </script><script type="text/javascript" src="../scripts/SplitScreen.js"> </script><script type="text/javascript" src="../scripts/Dropdown.js"> </script><script type="text/javascript" src="../scripts/script_manifold.js"> </script><script type="text/javascript" src="../scripts/script_feedBack.js"> </script><script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script><script type="text/javascript" src="../scripts/CommonUtilities.js"> </script><xml><MSHelp:Keyword Index="A" Term="d0536293-9ac9-41da-8fbf-d6df5ac0acae" /><MSHelp:Attr Name="RevisionNumber" Value="1" /><MSHelp:Attr Name="AssetID" Value="d0536293-9ac9-41da-8fbf-d6df5ac0acae" /><MSHelp:Attr Name="Abstract" Value="&#xD;&#xA;          This page shows how to push the Symantec Management Agent to a range of IP addresses.&#xD;&#xA;        " /><MSHelp:Attr Name="TopicType" Value="kbArticle" /><MSHelp:Attr Name="Locale" Value="en-us" /></xml><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"></script></head><body><input type="hidden" id="userDataCache" class="userDataStyle" /><input type="hidden" id="hiddenScrollOffset" /><img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" title="Collapse image" /><img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" title="Expand Image" /><img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" /><img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" /><img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" /><img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" /><img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" title="Copy image" /><img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" title="CopyHover image" /><div id="header"><table id="topTable" cellspacing="0" cellpadding="0"><tr><td><span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0"><img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span></td></tr></table><div id="devlangsMenu"><input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on" onClick="SetLanguage(this)" /><label class="checkboxLabel" for="CSharpCheckbox">C#</label><br /></div><table id="bottomTable" cellpadding="0" cellspacing="0"><tr id="headerTableRow1"><td align="left"><span id="runningHeaderText">Symantec Administrator SDK 8.0</span></td></tr><tr id="headerTableRow2"><td align="left"><span id="nsrTitle">Agent Push Demonstration</span></td></tr><tr id="headerTableRow3"><td align="left">
+  <span id="headfeedbackarea" class="feedbackhead">
+      <a href="javascript:SubmitFeedback('DL-AL-SDKSupport@symantec.com','Symantec Administrator SDK 8.0','','1.0.0.0','','%0\dYour%20feedback%20is%20used%20to%20improve%20the%20documentation%20and%20the%20product.%20Your%20e-mail%20address%20will%20not%20be%20used%20for%20any%20other%20purpose%20and%20is%20disposed%20of%20after%20the%20issue%20you%20report%20is%20resolved.%20%20While%20working%20to%20resolve%20the%20issue%20that%20you%20report,%20you%20may%20be%20contacted%20via%20e-mail%20to%20get%20further%20details%20or%20clarification%20on%20the%20feedback%20you%20sent.%20After%20the%20issue%20you%20report%20has%20been%20addressed,%20you%20may%20receive%20an%20e-mail%20to%20let%20you%20know%20that%20your%20feedback%20has%20been%20addressed.%0\A%0\d','Customer%20Feedback');">
+        
+        Send Feedback
+      </a>
+	</span>
+</td></tr></table><table id="gradientTable"><tr><td class="nsrBottom" background="../icons/gradient.gif" /></tr></table></div><div id="mainSection"><div id="mainBody"><div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" /><span style="color: DarkGray"> </span>
+  
+
+    <a name="Section1" /><h1 class="heading"><span onclick="ExpandCollapse(sectionToggle0)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(sectionToggle0, event)" tabindex="0"><img id="sectionToggle0" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Demo: Pushing the Symantec Agent</span></h1><div id="sectionSection0" class="section" name="collapseableSection" style="">
+        <p>
+          This page shows how to push the Symantec Management Agent to a range of IP addresses.
+        </p>
+        
+        <a name="SubSection1" /><h3 class="subHeading">Scenario</h3><div class="subsection">
+            <p>
+              The Test Lab has re-imaged a rack of computers with incremental IP addresses. Using script,
+              the lab pushes the Agent out to the rack immediately.
+            </p>
+          </div>
+        
+        <a name="SubSection2" /><h3 class="subHeading">Solution</h3><div class="subsection">
+            <p>
+              First, the script requests the range of the IP addresses and then pushes the Agent to each
+              IP address. Then the application creates a report of computers containing the Agent and periodically
+              observes the report. A message showing the IP addresses is displayed after either all agents
+              have been deployed or after ten minutes have passed.
+            </p>
+          </div>
+        
+        <a name="SubSection3" /><h3 class="subHeading">Push the Agent to a Range of IP Addresses: Example Script</h3><div class="subsection">
+            <p>
+              <span><div class="highlight-title"><span class="highlight-copycode" onkeypress="javascript:CopyColorizedCodeCheckKey(this.parentNode, event);" tabindex="0" onmouseover="CopyCodeChangeIcon(this)" onmouseout="CopyCodeChangeIcon(this)" onclick="javascript:CopyColorizedCode(this.parentNode);"><img src="../icons/CopyCode.gif" style="margin-right: 5px;" />Copy</span>VBScript</div><div class="code"><pre><span class="highlight-keyword">Option</span> <span class="highlight-keyword">Explicit</span>
+<span class="highlight-comment">'---------------------------------------</span>
+<span class="highlight-comment">' Set up management objects</span>
+<span class="highlight-comment">'---------------------------------------</span>
+<span class="highlight-keyword">dim</span> resourceManagement, reportManagement, itemManagement
+<span class="highlight-keyword">set</span> resourceManagement = <span class="highlight-keyword">CreateObject</span>(<span class="highlight-literal">"Altiris.ASDK.NS.ResourceManagement"</span>)
+resourceManagement.TargetServer = <span class="highlight-literal">"localhost"</span>
+resourceManagement.Authenticate()
+
+<span class="highlight-keyword">set</span> reportManagement = <span class="highlight-keyword">CreateObject</span>(<span class="highlight-literal">"Altiris.ASDK.NS.ReportManagement"</span>)
+reportManagement.TargetServer = <span class="highlight-literal">"localhost"</span>
+reportManagement.Authenticate()
+
+<span class="highlight-keyword">set</span> itemManagement = <span class="highlight-keyword">CreateObject</span>(<span class="highlight-literal">"Altiris.ASDK.NS.ItemManagement"</span>)
+itemManagement.TargetServer = <span class="highlight-literal">"localhost"</span>
+itemManagement.Authenticate()
+
+<span class="highlight-comment">'---------------------------------------</span>
+<span class="highlight-comment">' Setup other variables</span>
+<span class="highlight-comment">'---------------------------------------</span>
+<span class="highlight-keyword">dim</span> baseIp, startIp, endIp, reportsFolderGuid
+<span class="highlight-comment">' ip range</span>
+baseIp = <span class="highlight-keyword">InputBox</span>(<span class="highlight-literal">"Enter the first 3 digits of the ip address (255.255.255)"</span>)
+<span class="highlight-keyword">if</span> baseIp = <span class="highlight-literal">""</span> <span class="highlight-keyword">then</span>
+wscript.Quit
+<span class="highlight-keyword">end</span> <span class="highlight-keyword">if</span>
+
+startIp = <span class="highlight-keyword">InputBox</span>(<span class="highlight-literal">"Enter the last digit of the starting ip address"</span>)
+<span class="highlight-keyword">if</span> startIp = <span class="highlight-literal">""</span> <span class="highlight-keyword">then</span>
+wscript.Quit
+<span class="highlight-keyword">end</span> <span class="highlight-keyword">if</span>
+
+endIp = <span class="highlight-keyword">InputBox</span>(<span class="highlight-literal">"Enter last digit of the final ip address"</span>)
+<span class="highlight-keyword">if</span> endIp = <span class="highlight-literal">""</span> <span class="highlight-keyword">then</span>
+wscript.Quit
+<span class="highlight-keyword">end</span> <span class="highlight-keyword">if</span>
+
+reportsFolderGuid = <span class="highlight-literal">"{4d4d03c6-cb51-4502-886f-13f756198b1b}"</span>
+
+<span class="highlight-comment">' create a dictionary of ip addresses</span>
+<span class="highlight-keyword">dim</span> ipAddrDictionary, ip, ipAddress
+<span class="highlight-keyword">set</span> ipAddrDictionary = <span class="highlight-keyword">CreateObject</span>(<span class="highlight-literal">"Scripting.Dictionary"</span>)
+<span class="highlight-keyword">for</span> ip = startIp <span class="highlight-keyword">to</span> endIp
+ipAddress = baseIp &amp; <span class="highlight-literal">"."</span> &amp; ip
+ipAddrDictionary.Add ipAddress, <span class="highlight-keyword">null</span>
+<span class="highlight-keyword">next</span>
+
+<span class="highlight-comment">'---------------------------------------</span>
+<span class="highlight-comment">' Pushing Symantec Agent To Computers</span>
+<span class="highlight-comment">'---------------------------------------</span>
+wscript.Echo <span class="highlight-literal">"Pushing Symantec Agent To Computers"</span>
+<span class="highlight-keyword">dim</span> addrs, addr
+addrs = ipAddrDictionary.Keys
+<span class="highlight-keyword">for</span> <span class="highlight-keyword">each</span> addr in addrs
+<span class="highlight-keyword">call</span> resourceManagement.PushAltirisAgentToComputers(addr, <span class="highlight-keyword">true</span>, <span class="highlight-keyword">true</span>, <span class="highlight-keyword">false</span>, <span class="highlight-keyword">true</span>, <span class="highlight-literal">"c:\tmp\clientAgentInstall"</span>)
+<span class="highlight-keyword">next</span>
+
+<span class="highlight-comment">'---------------------------------------</span>
+<span class="highlight-comment">' Pushing Symantec Agent To Computers use login and password</span>
+<span class="highlight-comment">'---------------------------------------</span>
+wscript.Echo <span class="highlight-literal">"Pushing Symantec Agent To Computers use login and password"</span>
+<span class="highlight-keyword">dim</span> addrs, addr
+addrs = ipAddrDictionary.Keys
+<span class="highlight-keyword">for</span> <span class="highlight-keyword">each</span> addr in addrs
+<span class="highlight-keyword">call</span> resourceManagement.PushAltirisAgentToComputersStrict(addr, <span class="highlight-keyword">true</span>, <span class="highlight-keyword">true</span>, <span class="highlight-keyword">false</span>, <span class="highlight-keyword">true</span>, <span class="highlight-literal">"c:\tmp\clientAgentInstall"</span>, <span class="highlight-literal">"userName"</span>, <span class="highlight-literal">"password"</span>)
+<span class="highlight-keyword">next</span>
+
+<span class="highlight-comment">'---------------------------------------</span>
+<span class="highlight-comment">' Observing Agent Installation Status...</span>
+<span class="highlight-comment">'---------------------------------------</span>
+wscript.Echo <span class="highlight-literal">"Observing Agent Installation Status..."</span>
+
+<span class="highlight-comment">' Create the report to monitor installation progress</span>
+<span class="highlight-keyword">dim</span> query, reportObject
+query = <span class="highlight-literal">"select distinct r.[IP Address] as [IP Address]"</span> _
+&amp; <span class="highlight-literal">" from Inv_AeX_AC_Client_Agent a"</span> _
+&amp; <span class="highlight-literal">" join vComputer? r on? r.[Guid] = a.[_ResourceGuid]"</span> _
+&amp; <span class="highlight-comment">" where upper(a.[Agent Name]) in ( 'ALTIRIS EXPRESS NS CLIENT', 'ALTIRIS AGENT' )"</span>
+<span class="highlight-keyword">set</span> reportObject = reportManagement.CreateReportUsingRawSqlQuery(<span class="highlight-literal">"Agents Installed"</span>, <span class="highlight-literal">"Report of Agents installed"</span>, <span class="highlight-literal">"Agents Installed Data Source"</span>, reportsFolderGuid, query)
+
+<span class="highlight-comment">' run the report until all agents are installed, wait 10 minutes</span>
+<span class="highlight-keyword">dim</span> attempts, results
+attempts = <span class="highlight-number">0</span>
+<span class="highlight-keyword">set</span> results = reportManagement.RunReport(reportObject.Guid)
+<span class="highlight-keyword">do</span> <span class="highlight-keyword">while</span> results.Fields.Count &lt;&gt; ipAddrDictionary.Count
+<span class="highlight-keyword">if</span> attempts = <span class="highlight-number">5</span> <span class="highlight-keyword">then</span>
+<span class="highlight-keyword">exit</span> <span class="highlight-keyword">do</span>
+<span class="highlight-keyword">end</span> <span class="highlight-keyword">if</span>
+wscript.Sleep( <span class="highlight-number">1000</span> * <span class="highlight-number">60</span> * <span class="highlight-number">2</span> ) <span class="highlight-comment">' sleep 2 minutes</span>
+<span class="highlight-keyword">set</span> results = reportManagement.RunReport(reportObject.Guid)
+attempts = attempts + <span class="highlight-number">1</span>
+<span class="highlight-keyword">loop</span>
+
+<span class="highlight-keyword">if</span> results.Fields.Count = ipAddrDictionary.Count <span class="highlight-keyword">then</span>
+wscript.Echo <span class="highlight-literal">"Symantec Agent has been installed on all computers"</span>
+<span class="highlight-keyword">else</span>
+<span class="highlight-comment">' report who hasn't installed yet</span>
+<span class="highlight-keyword">dim</span> names, ipAddr, computers
+results.MoveFirst()
+<span class="highlight-keyword">do</span> <span class="highlight-keyword">while</span> <span class="highlight-keyword">not</span> results.EOF
+ipAddr = results.Fields.Item(<span class="highlight-literal">"IP Address"</span>).Value
+addrs = ipAddrDictionary.Keys
+<span class="highlight-keyword">for</span> <span class="highlight-keyword">each</span> addr in addrs
+<span class="highlight-keyword">if</span> ipAddr = addr <span class="highlight-keyword">then</span>
+ipAddrDictionary.Remove addr
+<span class="highlight-keyword">end</span> <span class="highlight-keyword">if</span>
+<span class="highlight-keyword">next</span>
+results.MoveNext()
+<span class="highlight-keyword">loop</span>
+
+computers = <span class="highlight-literal">"Symantec Agent has NOT been installed on the following computers: "</span> &amp; vbCrLf
+addrs = ipAddrDictionary.Keys
+<span class="highlight-keyword">for</span> <span class="highlight-keyword">each</span> addr in addrs
+computers = computers &amp; addr &amp; vbCrLf
+<span class="highlight-keyword">next</span>
+
+Wscript.Echo computers
+<span class="highlight-keyword">end</span> <span class="highlight-keyword">if</span>
+
+<span class="highlight-comment">'---------------------------------------</span>
+<span class="highlight-comment">' Clean up</span>
+<span class="highlight-comment">'---------------------------------------</span>
+<span class="highlight-keyword">call</span> itemManagement.DeleteItem(reportObject.Guid)</pre></div></span>
+            </p>
+          </div>
+        
+      </div>
+
+  
+</div><div id="footer"><div class="footerLine"><img width="100%" height="3px" src="../icons/footer.gif" title="Footer image" /></div><A NAME="feedback"></A><span id="fb" class="feedbackcss" style="display: none;"> </span>
+<p />Send comments on this topic to
+        <a id="HT_MailLink" href="mailto:DL-AL-SDKSupport%40symantec.com?Subject=Symantec Administrator SDK 8.0">DL-AL-SDKSupport@symantec.com</a>
+        <script type="text/javascript">
+        var HT_mailLink = document.getElementById("HT_MailLink");
+        var HT_mailLinkText = HT_mailLink.innerHTML;
+        HT_mailLink.href += ": " + document.title;
+        HT_mailLink.innerHTML = HT_mailLinkText;
+        </script> <p />Copyright © 2016, Symantec Corporation, All rights reserved</div></div></body></html>
