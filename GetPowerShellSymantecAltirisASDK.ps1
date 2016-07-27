@@ -74,9 +74,7 @@ function Install-PowerShellSymantecAltirisASDK {
         return
     }
   
-    $ModulePaths = @($env:PSModulePath -split ';')
-
-    $Destination = $ModulePaths | Select-Object -Index 0
+    $Destination = "C:\Program Files\WindowsPowerShell\Modules"
     
     Write-host "Installing to $Destination"
     New-Item -Path ($Destination + "\PowerShellSymantecAltirisASDK\") -ItemType Directory -Force | Out-Null
