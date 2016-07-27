@@ -66,22 +66,18 @@ function Install-PowerShellSymantecAltirisASDK {
       # URL to the respository to download PowerShellSymantecAltirisASDK from
       $url
     )
+
+    if(!(Test-Admin)) {
+        Write-Host "User is not running with administrative rights. Attempting to elevate..."
+        $command = "-ExecutionPolicy bypass -noexit -command (new-object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Tiberriver256/PowerShellSymantecAltirisASDK/master/GetPowerShellSymantecAltirisASDK.ps1') | iex"
+        Start-Process powershell -verb runas -argumentlist $command
+        return
+    }
   
     $ModulePaths = @($env:PSModulePath -split ';')
-    # $PowerShellSymantecAltirisASDKDestinationModulePath is mostly needed for testing purposes,
-    if ((Test-Path -Path Variable:PowerShellSymantecAltirisASDKDestinationModulePath) -and $PowerShellSymantecAltirisASDKDestinationModulePath) {
-        $Destination = $PowerShellSymantecAltirisASDKDestinationModulePath
-        if ($ModulePaths -notcontains $Destination) {
-            Write-Warning 'PowerShellSymantecAltirisASDK install destination is not included in the PSModulePath environment variable'
-        }
-    }
-    else {
-        $ExpectedUserModulePath = Join-Path -Path ([Environment]::GetFolderPath('MyDocuments')) -ChildPath WindowsPowerShell\Modules
-        $Destination = $ModulePaths | Where-Object { $_ -eq $ExpectedUserModulePath }
-        if (-not $Destination) {
-            $Destination = $ModulePaths | Select-Object -Index 0
-        }
-    }
+
+    $Destination = $ModulePaths | Select-Object -Index 0
+
     New-Item -Path ($Destination + "\PowerShellSymantecAltirisASDK\") -ItemType Directory -Force | Out-Null
     Write-Host ('Downloading PowerShellSymantecAltirisASDK from {0}' -f $url)
     Get-File -Url $url -SaveToLocation "$Destination\PowerShellSymantecAltirisASDK\PowerShellSymantecAltirisASDK.psm1"
@@ -114,6 +110,12 @@ USAGE:
 
 For more details visit https://github.com/Tiberriver256/PowerShellSymantecAltirisASDK
 "@
+}
+
+function Test-Admin {
+    $identity  = [System.Security.Principal.WindowsIdentity]::GetCurrent()
+    $principal = New-Object System.Security.Principal.WindowsPrincipal( $identity )
+    return $principal.IsInRole( [System.Security.Principal.WindowsBuiltInRole]::Administrator )
 }
 
 Install-PowerShellSymantecAltirisASDK -Url $url
