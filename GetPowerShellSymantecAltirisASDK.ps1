@@ -77,7 +77,8 @@ function Install-PowerShellSymantecAltirisASDK {
     $ModulePaths = @($env:PSModulePath -split ';')
 
     $Destination = $ModulePaths | Select-Object -Index 0
-
+    
+    Write-host "Installing to $Destination"
     New-Item -Path ($Destination + "\PowerShellSymantecAltirisASDK\") -ItemType Directory -Force | Out-Null
     Write-Host ('Downloading PowerShellSymantecAltirisASDK from {0}' -f $url)
     Get-File -Url $url -SaveToLocation "$Destination\PowerShellSymantecAltirisASDK\PowerShellSymantecAltirisASDK.psm1"
