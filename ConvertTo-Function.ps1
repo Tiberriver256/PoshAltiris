@@ -26,12 +26,14 @@ Param(
 
 Function ConvertTo-Function ($WebService, $ServiceName) {
 
+    start-process hh.exe -ArgumentList @("-decompile", "$((Get-Location).Path + '\DecompiledHelp')", "$((Get-Item .\ASDK8.0.chm).FullName)") -Wait
+
     $WebServiceMethods = $WebService | gm -MemberType Method | where {$_.Name -notmatch "Async" -and$_.Definition -notmatch "System.IAsyncResult" -and @("Discover","Dispose","ToString","Abort","InitializeLifetimeService","GetType","GetHashcode","Equals","GetLifeTimeService","CreateObjRef") -notcontains $_.name}
 
     foreach ($Method in $WebServiceMethods) {
     Write-Host "Parsing method: $Method"
     $CurrentMethodDefinition = [regex]::matches($Method.Definition, "^(.*?)\s(\w*)\(((\w*)\s(\w*),?\s?)*\).*$")
-    $HtmlHelpFileName = Get-Item "*_$($ServiceName)Lib*$($CurrentMethodDefinition.Captures[0].Groups[2].Value).htm"
+    $HtmlHelpFileName = Get-Item ".\DecompiledHelp\html\*_$($ServiceName)Lib*$($CurrentMethodDefinition.Captures[0].Groups[2].Value).htm"
     $HTMLDOMFile = Create-HTMLDOMFromFile -FileName $HtmlHelpFileName.FullName
 
     $Function = @"
@@ -118,5 +120,7 @@ $(
     $Function | Out-String
 
     }
+
+    Remove-Item .\DecompiledHelp -Force -Recurse
 
 }
