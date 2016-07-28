@@ -1,5 +1,5 @@
 
-Function CreateCustomEventHierarchyRule {
+Function New-HierarchyCustomEventRule {
 
 <#
 .SYNOPSIS
@@ -105,7 +105,7 @@ Function CreateCustomEventHierarchyRule {
 }
 
 
-Function CreateCustomItemHierarchyRule {
+Function New-HierarchyCustomItemRule {
 
 <#
 .SYNOPSIS
@@ -187,7 +187,7 @@ Function CreateCustomItemHierarchyRule {
 }
 
 
-Function CreateCustomResourceHierarchyRule {
+Function New-HierarchyCustomResourceRule {
 
 <#
 .SYNOPSIS
@@ -293,7 +293,7 @@ Function CreateCustomResourceHierarchyRule {
 }
 
 
-Function CreateCustomSecurityHierarchyRule {
+Function New-HierarchyCustomSecurityRule {
 
 <#
 .SYNOPSIS
@@ -375,7 +375,7 @@ Function CreateCustomSecurityHierarchyRule {
 }
 
 
-Function CreateStandardEventHierarchyRule {
+Function New-HierarchyStandardEventRule {
 
 <#
 .SYNOPSIS
@@ -481,7 +481,7 @@ Function CreateStandardEventHierarchyRule {
 }
 
 
-Function CreateStandardItemHierarchyRule {
+Function New-HierarchyStandardItemRule {
 
 <#
 .SYNOPSIS
@@ -563,7 +563,7 @@ Function CreateStandardItemHierarchyRule {
 }
 
 
-Function CreateStandardResourceHierarchyRule {
+Function New-HierarchyStandardResourceRule {
 
 <#
 .SYNOPSIS
@@ -669,7 +669,7 @@ Function CreateStandardResourceHierarchyRule {
 }
 
 
-Function CreateStandardSecurityHierarchyRule {
+Function New-HierarchyStandardSecurityRule {
 
 <#
 .SYNOPSIS
@@ -751,7 +751,7 @@ Function CreateStandardSecurityHierarchyRule {
 }
 
 
-Function EnableHierarchyEditableProperty {
+Function Enable-HierarchyEditableProperty {
 
 <#
 .SYNOPSIS
@@ -809,7 +809,7 @@ Function EnableHierarchyEditableProperty {
 }
 
 
-Function EnableHierarchyReplication {
+Function Enable-HierarchyReplication {
 
 <#
 .SYNOPSIS
@@ -855,7 +855,7 @@ Function EnableHierarchyReplication {
 }
 
 
-Function EnableReplicationForItemInstance {
+Function Enable-ReplicationForItemInstance {
 
 <#
 .SYNOPSIS
@@ -907,7 +907,7 @@ Function EnableReplicationForItemInstance {
 }
 
 
-Function GetEnabledHierarchyEditableProperties {
+Function Get-HierarchyEnabledEditableProperties {
 
 <#
 .SYNOPSIS
@@ -953,7 +953,7 @@ Function GetEnabledHierarchyEditableProperties {
 }
 
 
-Function GetHierarchyEditableProperties {
+Function Get-HierarchyEditableProperties {
 
 <#
 .SYNOPSIS
@@ -999,7 +999,7 @@ Function GetHierarchyEditableProperties {
 }
 
 
-Function IsHierarchyManaged {
+Function Read-HierarchyIsManaged {
 
 <#
 .SYNOPSIS
@@ -1045,7 +1045,7 @@ Function IsHierarchyManaged {
 }
 
 
-Function IsHierarchyMember {
+Function Read-HierarchyMember {
 
 <#
 .SYNOPSIS
@@ -1085,7 +1085,7 @@ Function IsHierarchyMember {
 }
 
 
-Function IsHierarchyPublished {
+Function Read-HierarchyIsPublished {
 
 <#
 .SYNOPSIS
@@ -1131,7 +1131,7 @@ Function IsHierarchyPublished {
 }
 
 
-Function RunCompleteReplication {
+Function Invoke-HierarchyCompleteReplication {
 
 <#
 .SYNOPSIS
@@ -1177,7 +1177,7 @@ Function RunCompleteReplication {
 }
 
 
-Function RunDifferentialReplication {
+Function Invoke-HierarchyDifferentialReplication {
 
 <#
 .SYNOPSIS

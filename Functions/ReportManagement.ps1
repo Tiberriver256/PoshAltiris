@@ -1,5 +1,5 @@
 
-Function CreateReportUsingRawSqlQuery {
+Function New-ReportUsingRawSql {
 
 <#
 .SYNOPSIS
@@ -69,7 +69,7 @@ Function CreateReportUsingRawSqlQuery {
 }
 
 
-Function GetReportParameters {
+Function Get-ReportParameters {
 
 <#
 .SYNOPSIS
@@ -115,7 +115,7 @@ Function GetReportParameters {
 }
 
 
-Function RunReport {
+Function Invoke-Report {
 
 <#
 .SYNOPSIS
@@ -161,7 +161,7 @@ Function RunReport {
 }
 
 
-Function RunReportWithParameters {
+Function Invoke-ReportWithParameters {
 
 <#
 .SYNOPSIS
