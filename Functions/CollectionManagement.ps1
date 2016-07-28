@@ -1,5 +1,5 @@
 
-Function AddExclusions {
+Function Add-CollectionExclusions {
 
 <#
 .SYNOPSIS
@@ -51,7 +51,7 @@ Function AddExclusions {
 }
 
 
-Function AddInclusions {
+Function Add-CollectionInclusions {
 
 <#
 .SYNOPSIS
@@ -103,7 +103,7 @@ Function AddInclusions {
 }
 
 
-Function CreateResourceCollection {
+Function New-Collection {
 
 <#
 .SYNOPSIS
@@ -167,7 +167,7 @@ Function CreateResourceCollection {
 }
 
 
-Function GetCollectionMembership {
+Function Get-CollectionMembership {
 
 <#
 .SYNOPSIS
@@ -213,7 +213,7 @@ Function GetCollectionMembership {
 }
 
 
-Function GetExclusions {
+Function Get-CollectionExclusions {
 
 <#
 .SYNOPSIS
@@ -265,7 +265,7 @@ Function GetExclusions {
 }
 
 
-Function GetInclusions {
+Function Get-CollectionInclusions {
 
 <#
 .SYNOPSIS
@@ -317,7 +317,7 @@ Function GetInclusions {
 }
 
 
-Function RemoveExclusions {
+Function Remove-CollectionExclusions {
 
 <#
 .SYNOPSIS
@@ -369,7 +369,7 @@ Function RemoveExclusions {
 }
 
 
-Function RemoveInclusions {
+Function Remove-CollectionInclusions {
 
 <#
 .SYNOPSIS
@@ -421,7 +421,7 @@ Function RemoveInclusions {
 }
 
 
-Function SetCollectionDataSourceToRawSqlQuery {
+Function Set-CollectionDataSourceToRawSql {
 
 <#
 .SYNOPSIS
@@ -473,7 +473,7 @@ Function SetCollectionDataSourceToRawSqlQuery {
 }
 
 
-Function UpdateCollections {
+Function Update-Collection {
 
 <#
 .SYNOPSIS

@@ -1,5 +1,5 @@
 
-Function RunDeploymentSolutionTask {
+Function Invoke-DeploymentSolutionTask {
 
 <#
 .SYNOPSIS
