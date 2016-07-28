@@ -24,7 +24,7 @@
 
 foreach ($WebserviceUri in $WebServices)
 {
-    $Path = 'C:\Users\rob.steenwyk\Documents\GitHub\PowerShellSymantecAltirisASDK\' + $WebServiceuri.ServiceName + '.ps1'
+    $Path = 'C:\Users\rob.steenwyk\Documents\GitHub\PowerShellSymantecAltirisASDK\Functions\' + $WebServiceuri.ServiceName + '.ps1'
     $Webservice = New-WebServiceProxy -Uri $WebserviceUri.Uri -UseDefaultCredential
-    ConvertTo-Function -WebService $Webservice -ServiceName $WebServiceUri.ServiceName | Out-File -FilePath $Path -Append
+    ConvertTo-Function -WebService $Webservice -ServiceName $WebServiceUri.ServiceName | Out-File -FilePath $Path -Encoding ASCII -Append
 }
