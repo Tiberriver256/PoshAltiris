@@ -51,7 +51,7 @@ Function CloneItem {
 }
 
 
-Function CreateFolder {
+Function New-Folder {
 
 <#
 .SYNOPSIS
@@ -103,7 +103,7 @@ Function CreateFolder {
 }
 
 
-Function DeleteItem {
+Function Remove-Item {
 
 <#
 .SYNOPSIS
@@ -149,7 +149,7 @@ Function DeleteItem {
 }
 
 
-Function DisablePolicyItem {
+Function Disable-PolicyItem {
 
 <#
 .SYNOPSIS
@@ -195,7 +195,7 @@ Function DisablePolicyItem {
 }
 
 
-Function EnablePolicyItem {
+Function Enable-PolicyItem {
 
 <#
 .SYNOPSIS
@@ -241,7 +241,7 @@ Function EnablePolicyItem {
 }
 
 
-Function ExecuteSchedulableItem {
+Function Invoke-SchedulableItem {
 
 <#
 .SYNOPSIS
@@ -287,7 +287,7 @@ Function ExecuteSchedulableItem {
 }
 
 
-Function ExportItemProfileXmlString {
+Function Export-ItemProfileXmlString {
 
 <#
 .SYNOPSIS
@@ -339,7 +339,7 @@ Function ExportItemProfileXmlString {
 }
 
 
-Function ExportItemXml {
+Function Export-ItemXml {
 
 <#
 .SYNOPSIS
@@ -391,7 +391,7 @@ Function ExportItemXml {
 }
 
 
-Function ExportItemXmlString {
+Function Export-ItemXmlString {
 
 <#
 .SYNOPSIS
@@ -437,7 +437,7 @@ Function ExportItemXmlString {
 }
 
 
-Function GetItemByGuid {
+Function Get-ItemByGuid {
 
 <#
 .SYNOPSIS
@@ -483,7 +483,7 @@ Function GetItemByGuid {
 }
 
 
-Function GetItemsByName {
+Function Get-ItemsByName {
 
 <#
 .SYNOPSIS
@@ -529,7 +529,7 @@ Function GetItemsByName {
 }
 
 
-Function GetItemsByNameAndType {
+Function Get-ItemsByNameAndType {
 
 <#
 .SYNOPSIS
@@ -581,7 +581,7 @@ Function GetItemsByNameAndType {
 }
 
 
-Function GetItemsByType {
+Function Get-ItemsByType {
 
 <#
 .SYNOPSIS
@@ -627,7 +627,7 @@ Function GetItemsByType {
 }
 
 
-Function GetItemsInFolder {
+Function Get-ItemsInFolder {
 
 <#
 .SYNOPSIS
@@ -673,7 +673,7 @@ Function GetItemsInFolder {
 }
 
 
-Function ImportItemXmlFile {
+Function Import-ItemXmlFile {
 
 <#
 .SYNOPSIS
@@ -719,7 +719,7 @@ Function ImportItemXmlFile {
 }
 
 
-Function ImportItemXmlFiles {
+Function Import-ItemXmlFiles {
 
 <#
 .SYNOPSIS
@@ -765,7 +765,7 @@ Function ImportItemXmlFiles {
 }
 
 
-Function ImportItemXmlString {
+Function Import-ItemXmlString {
 
 <#
 .SYNOPSIS
@@ -811,7 +811,7 @@ Function ImportItemXmlString {
 }
 
 
-Function ItemExists {
+Function Test-ItemExists {
 
 <#
 .SYNOPSIS
@@ -857,7 +857,7 @@ Function ItemExists {
 }
 
 
-Function MoveItem {
+Function Move-Item {
 
 <#
 .SYNOPSIS
@@ -909,7 +909,7 @@ Function MoveItem {
 }
 
 
-Function RenameItem {
+Function Rename-Item {
 
 <#
 .SYNOPSIS
@@ -961,7 +961,7 @@ Function RenameItem {
 }
 
 
-Function RunAutomationPolicyTask {
+Function Invoke-AutomationPolicyTask {
 
 <#
 .SYNOPSIS
@@ -1007,7 +1007,7 @@ Function RunAutomationPolicyTask {
 }
 
 
-Function SetItemsSchedule {
+Function Set-ItemsSchedule {
 
 <#
 .SYNOPSIS

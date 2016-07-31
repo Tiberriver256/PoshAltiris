@@ -1,5 +1,5 @@
 
-Function CreateCommandLine {
+Function New-CommandLine {
 
 <#
 .SYNOPSIS
@@ -99,7 +99,7 @@ Function CreateCommandLine {
 }
 
 
-Function DeleteCommandLine {
+Function Remove-CommandLine {
 
 <#
 .SYNOPSIS
@@ -145,7 +145,7 @@ Function DeleteCommandLine {
 }
 
 
-Function GetCommandLine {
+Function Get-CommandLine {
 
 <#
 .SYNOPSIS
@@ -191,7 +191,7 @@ Function GetCommandLine {
 }
 
 
-Function SetCommandLineProperty {
+Function Set-CommandLineProperty {
 
 <#
 .SYNOPSIS

@@ -1,5 +1,5 @@
 
-Function AddUserOrGroupToPublishingItem {
+Function Add-SWPortalUserOrGroupToPublishingItem {
 
 <#
 .SYNOPSIS
@@ -63,7 +63,7 @@ Function AddUserOrGroupToPublishingItem {
 }
 
 
-Function GetSoftwarePortalSetting {
+Function Get-SWPortalSetting {
 
 <#
 .SYNOPSIS
@@ -109,7 +109,7 @@ Function GetSoftwarePortalSetting {
 }
 
 
-Function GetSoftwareRequestsForAdmin {
+Function Get-SWPortalRequestsForAdmin {
 
 <#
 .SYNOPSIS
@@ -149,7 +149,7 @@ Function GetSoftwareRequestsForAdmin {
 }
 
 
-Function GetSoftwareRequestsForManager {
+Function Get-SWPortalRequestsForManager {
 
 <#
 .SYNOPSIS
@@ -195,7 +195,7 @@ Function GetSoftwareRequestsForManager {
 }
 
 
-Function GetUsersForPublishingItem {
+Function Get-SWPortalUsersForPublishingItem {
 
 <#
 .SYNOPSIS
@@ -241,7 +241,7 @@ Function GetUsersForPublishingItem {
 }
 
 
-Function PublishPolicy {
+Function Publish-SWPortalPolicy {
 
 <#
 .SYNOPSIS
@@ -299,7 +299,7 @@ Function PublishPolicy {
 }
 
 
-Function PublishSoftwareResource {
+Function Publish-SWPortalResource {
 
 <#
 .SYNOPSIS
@@ -363,7 +363,7 @@ Function PublishSoftwareResource {
 }
 
 
-Function RemoveUserOrGroupFromPublishingItem {
+Function Remove-SWPortalUserOrGroupFromPublishingItem {
 
 <#
 .SYNOPSIS
@@ -415,7 +415,7 @@ Function RemoveUserOrGroupFromPublishingItem {
 }
 
 
-Function SetSoftwarePortalSetting {
+Function Set-SWPortalSetting {
 
 <#
 .SYNOPSIS
@@ -467,7 +467,7 @@ Function SetSoftwarePortalSetting {
 }
 
 
-Function SoftwareRequestAction {
+Function Set-SWPortalRequestAction {
 
 <#
 .SYNOPSIS
@@ -485,7 +485,7 @@ Function SoftwareRequestAction {
 .EXAMPLE 
      
 
-.NOTES
+.NOTES No idea what this does, Set- verb may not be proper for this function, I don't have SW Portal setup in my environment unable to test.
     
 #>
     

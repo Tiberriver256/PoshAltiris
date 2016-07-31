@@ -1,5 +1,5 @@
 
-Function CreateResourceAssociation {
+Function New-ResourceAssociation {
 
 <#
 .SYNOPSIS
@@ -57,7 +57,7 @@ Function CreateResourceAssociation {
 }
 
 
-Function GetComputerByNameAndDomain {
+Function Get-ComputerByNameAndDomain {
 
 <#
 .SYNOPSIS
@@ -109,7 +109,7 @@ Function GetComputerByNameAndDomain {
 }
 
 
-Function GetDataClassData {
+Function Get-DataClassData {
 
 <#
 .SYNOPSIS
@@ -161,7 +161,7 @@ Function GetDataClassData {
 }
 
 
-Function GetResourceByContext {
+Function Get-ResourceByContext {
 
 <#
 .SYNOPSIS
@@ -207,7 +207,7 @@ Function GetResourceByContext {
 }
 
 
-Function GetResourceByName {
+Function Get-ResourceByName {
 
 <#
 .SYNOPSIS
@@ -259,7 +259,7 @@ Function GetResourceByName {
 }
 
 
-Function GetUserByUserIdAndDomain {
+Function Get-UserByUserIdAndDomain {
 
 <#
 .SYNOPSIS
@@ -311,7 +311,7 @@ Function GetUserByUserIdAndDomain {
 }
 
 
-Function MergeResource {
+Function Merge-Resource {
 
 <#
 .SYNOPSIS
@@ -363,7 +363,7 @@ Function MergeResource {
 }
 
 
-Function PushAltirisAgentToComputers {
+Function Install-AltirisAgentToComputers {
 
 <#
 .SYNOPSIS
@@ -439,7 +439,7 @@ Function PushAltirisAgentToComputers {
 }
 
 
-Function PushAltirisAgentToComputersStrict {
+Function Install-AltirisAgentToComputersStrict {
 
 <#
 .SYNOPSIS

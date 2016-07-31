@@ -63,7 +63,7 @@ Function AddGuids {
 }
 
 
-Function CreateAgentPluginPolicy {
+Function New-PatchAgentPluginPolicy {
 
 <#
 .SYNOPSIS
@@ -127,7 +127,7 @@ Function CreateAgentPluginPolicy {
 }
 
 
-Function CreateUpdatePolicy {
+Function New-PatchUpdatePolicy {
 
 <#
 .SYNOPSIS
@@ -191,7 +191,7 @@ Function CreateUpdatePolicy {
 }
 
 
-Function EnsureStaged {
+Function Test-PatchBulletinStaged {
 
 <#
 .SYNOPSIS
@@ -243,7 +243,7 @@ Function EnsureStaged {
 }
 
 
-Function GetAllStagedUpdates {
+Function Get-PatchStagedUpdates {
 
 <#
 .SYNOPSIS
@@ -283,7 +283,7 @@ Function GetAllStagedUpdates {
 }
 
 
-Function GetCustomSeverities {
+Function Get-PatchCustomSeverities {
 
 <#
 .SYNOPSIS
@@ -323,7 +323,7 @@ Function GetCustomSeverities {
 }
 
 
-Function GetCustomSeverityLevels {
+Function Get-PatchCustomSeverityLevels {
 
 <#
 .SYNOPSIS
@@ -363,7 +363,7 @@ Function GetCustomSeverityLevels {
 }
 
 
-Function GetDistributionTaskStatus {
+Function Get-PatchDistributionTaskStatus {
 
 <#
 .SYNOPSIS
@@ -403,7 +403,7 @@ Function GetDistributionTaskStatus {
 }
 
 
-Function GetNonstagedUpdates {
+Function Get-PathcNonstagedUpdates {
 
 <#
 .SYNOPSIS
@@ -449,7 +449,7 @@ Function GetNonstagedUpdates {
 }
 
 
-Function GetPackageServerGuid {
+Function Get-PackageServerGuid {
 
 <#
 .SYNOPSIS
@@ -489,7 +489,7 @@ Function GetPackageServerGuid {
 }
 
 
-Function GetPreImportStatus {
+Function Get-PatchPreImportStatus {
 
 <#
 .SYNOPSIS
@@ -535,7 +535,7 @@ Function GetPreImportStatus {
 }
 
 
-Function GetPreImportStatusVerbose {
+Function Get-PatchPreImportStatusVerbose {
 
 <#
 .SYNOPSIS
@@ -581,7 +581,7 @@ Function GetPreImportStatusVerbose {
 }
 
 
-Function GetProperty {
+Function Get-PatchProperty {
 
 <#
 .SYNOPSIS
@@ -633,7 +633,7 @@ Function GetProperty {
 }
 
 
-Function GetStagedUpdates {
+Function Get-PatchStagedUpdates {
 
 <#
 .SYNOPSIS
@@ -679,7 +679,7 @@ Function GetStagedUpdates {
 }
 
 
-Function GetStagingTaskStatus {
+Function Get-PatchStagingTaskStatus {
 
 <#
 .SYNOPSIS
@@ -719,7 +719,7 @@ Function GetStagingTaskStatus {
 }
 
 
-Function GetTaskInstanceStatus {
+Function Get-PatchTaskInstanceStatus {
 
 <#
 .SYNOPSIS
@@ -765,7 +765,7 @@ Function GetTaskInstanceStatus {
 }
 
 
-Function GetTaskRunningInstances {
+Function Get-PatchTaskRunningInstances {
 
 <#
 .SYNOPSIS
@@ -811,7 +811,7 @@ Function GetTaskRunningInstances {
 }
 
 
-Function GetWindowsPreImportStatus {
+Function Get-PatchWindowsPreImportStatus {
 
 <#
 .SYNOPSIS
@@ -851,7 +851,7 @@ Function GetWindowsPreImportStatus {
 }
 
 
-Function GetWindowsPreImportStatusVerbose {
+Function Get-PatchWindowsPreImportStatusVerbose {
 
 <#
 .SYNOPSIS
@@ -891,7 +891,7 @@ Function GetWindowsPreImportStatusVerbose {
 }
 
 
-Function IsCleanUpAfterUpgrade71Finished {
+Function Get-IsCleanUpAfterUpgrade71Finished {
 
 <#
 .SYNOPSIS
@@ -931,7 +931,7 @@ Function IsCleanUpAfterUpgrade71Finished {
 }
 
 
-Function IsSoftwareUpdateDistributionRunning {
+Function Get-PatchSoftwareUpdateDistributionRunning {
 
 <#
 .SYNOPSIS
@@ -971,7 +971,7 @@ Function IsSoftwareUpdateDistributionRunning {
 }
 
 
-Function IsStaged {
+Function Get-PatchBulletinStaged {
 
 <#
 .SYNOPSIS
@@ -1017,7 +1017,7 @@ Function IsStaged {
 }
 
 
-Function IsStagingTaskRunning {
+Function Get-PatchIsStagingTaskRunning {
 
 <#
 .SYNOPSIS
@@ -1057,7 +1057,7 @@ Function IsStagingTaskRunning {
 }
 
 
-Function IsTaskRunning {
+Function Get-IsTaskRunning {
 
 <#
 .SYNOPSIS
@@ -1103,7 +1103,7 @@ Function IsTaskRunning {
 }
 
 
-Function MyPrivileges {
+Function Get-MyPrivileges {
 
 <#
 .SYNOPSIS
@@ -1143,7 +1143,7 @@ Function MyPrivileges {
 }
 
 
-Function OperatePatchWorker {
+Function Invoke-PatchWorker {
 
 <#
 .SYNOPSIS
@@ -1201,7 +1201,7 @@ Function OperatePatchWorker {
 }
 
 
-Function ResolveToPolicies {
+Function Resolve-PatchBulletinToPolicies {
 
 <#
 .SYNOPSIS
@@ -1247,7 +1247,7 @@ Function ResolveToPolicies {
 }
 
 
-Function ResolveToUpdates {
+Function Resolve-PatchBulletinToUpdates {
 
 <#
 .SYNOPSIS
@@ -1293,7 +1293,7 @@ Function ResolveToUpdates {
 }
 
 
-Function RunCleanUpAfterUpgrade71 {
+Function Invoke-CleanUpAfterUpgrade71 {
 
 <#
 .SYNOPSIS
@@ -1333,7 +1333,7 @@ Function RunCleanUpAfterUpgrade71 {
 }
 
 
-Function RunPatchWorker {
+Function Invoke-PatchWorker {
 
 <#
 .SYNOPSIS
@@ -1385,7 +1385,7 @@ Function RunPatchWorker {
 }
 
 
-Function RunPreImport {
+Function Invoke-PatchPreImport {
 
 <#
 .SYNOPSIS
@@ -1431,7 +1431,7 @@ Function RunPreImport {
 }
 
 
-Function RunTask {
+Function Invoke-Task {
 
 <#
 .SYNOPSIS
@@ -1483,7 +1483,7 @@ Function RunTask {
 }
 
 
-Function RunWindowsPreImport {
+Function Invoke-PatchWindowsPreImport {
 
 <#
 .SYNOPSIS
@@ -1523,7 +1523,7 @@ Function RunWindowsPreImport {
 }
 
 
-Function SetPluginPolicyMessages {
+Function Set-PatchPluginPolicyMessages {
 
 <#
 .SYNOPSIS
@@ -1605,7 +1605,7 @@ Function SetPluginPolicyMessages {
 }
 
 
-Function SetPluginPolicySchedules {
+Function Set-PatchPluginPolicySchedules {
 
 <#
 .SYNOPSIS
@@ -1669,7 +1669,7 @@ Function SetPluginPolicySchedules {
 }
 
 
-Function SetProperties {
+Function Set-PatchProperties {
 
 <#
 .SYNOPSIS
@@ -1721,7 +1721,7 @@ Function SetProperties {
 }
 
 
-Function SetProperty {
+Function Set-PatchProperty {
 
 <#
 .SYNOPSIS
@@ -1779,7 +1779,7 @@ Function SetProperty {
 }
 
 
-Function SetSeverityLevel {
+Function Set-PatchSeverityLevel {
 
 <#
 .SYNOPSIS
@@ -1831,7 +1831,7 @@ Function SetSeverityLevel {
 }
 
 
-Function SetSoftwareUpdatePolicySchedule {
+Function Set-PatchSoftwareUpdatePolicySchedule {
 
 <#
 .SYNOPSIS
@@ -1883,7 +1883,7 @@ Function SetSoftwareUpdatePolicySchedule {
 }
 
 
-Function SetSoftwareUpdatePolicyTargets {
+Function Set-PatchSoftwareUpdatePolicyTargets {
 
 <#
 .SYNOPSIS
@@ -1935,7 +1935,7 @@ Function SetSoftwareUpdatePolicyTargets {
 }
 
 
-Function SetupImport {
+Function Set-PatchImport {
 
 <#
 .SYNOPSIS
@@ -1987,7 +1987,7 @@ Function SetupImport {
 }
 
 
-Function SetupPreImport {
+Function Initialize-PatchPreImport {
 
 <#
 .SYNOPSIS
@@ -2051,7 +2051,7 @@ Function SetupPreImport {
 }
 
 
-Function SetupWindowsPreImport {
+Function Initialize-PatchWindowsPreImport {
 
 <#
 .SYNOPSIS
@@ -2109,7 +2109,7 @@ Function SetupWindowsPreImport {
 }
 
 
-Function StopPatchWorker {
+Function Stop-PatchWorker {
 
 <#
 .SYNOPSIS
@@ -2155,7 +2155,7 @@ Function StopPatchWorker {
 }
 
 
-Function StopPreImport {
+Function Stop-PatchPreImport {
 
 <#
 .SYNOPSIS
@@ -2201,7 +2201,7 @@ Function StopPreImport {
 }
 
 
-Function StopWindowsPreImport {
+Function Stop-PatchWindowsPreImport {
 
 <#
 .SYNOPSIS
@@ -2241,7 +2241,7 @@ Function StopWindowsPreImport {
 }
 
 
-Function UpdateResourceTargets {
+Function Update-PatchResourceTargets {
 
 <#
 .SYNOPSIS
@@ -2287,7 +2287,7 @@ Function UpdateResourceTargets {
 }
 
 
-Function UpdateSoftwareUpdatePolicy {
+Function Update-PatchSoftwareUpdatePolicy {
 
 <#
 .SYNOPSIS
