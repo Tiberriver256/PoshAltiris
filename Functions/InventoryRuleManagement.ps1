@@ -1,5 +1,5 @@
 
-Function AddExpression {
+Function Add-Expression {
 
 <#
 .SYNOPSIS
@@ -57,7 +57,7 @@ Function AddExpression {
 }
 
 
-Function AddOperatorToExpression {
+Function Add-OperatorToExpression {
 
 <#
 .SYNOPSIS
@@ -115,7 +115,7 @@ Function AddOperatorToExpression {
 }
 
 
-Function CreateExpression64BitWindowsInstalled {
+Function New-Expression64BitWindowsInstalled {
 
 <#
 .SYNOPSIS
@@ -155,7 +155,7 @@ Function CreateExpression64BitWindowsInstalled {
 }
 
 
-Function CreateExpressionFileVersion {
+Function New-ExpressionFileVersion {
 
 <#
 .SYNOPSIS
@@ -225,7 +225,7 @@ Function CreateExpressionFileVersion {
 }
 
 
-Function CreateExpressionMSIProductCode {
+Function New-ExpressionMSIProductCode {
 
 <#
 .SYNOPSIS
@@ -271,7 +271,7 @@ Function CreateExpressionMSIProductCode {
 }
 
 
-Function CreateExpressionMUIInstalled {
+Function New-ExpressionMUIInstalled {
 
 <#
 .SYNOPSIS
@@ -311,7 +311,7 @@ Function CreateExpressionMUIInstalled {
 }
 
 
-Function CreateExpressionProcessorType {
+Function New-ExpressionProcessorType {
 
 <#
 .SYNOPSIS
@@ -357,7 +357,7 @@ Function CreateExpressionProcessorType {
 }
 
 
-Function CreateExpressionRegistryKeyExits {
+Function New-ExpressionRegistryKeyExists {
 
 <#
 .SYNOPSIS
@@ -403,7 +403,7 @@ Function CreateExpressionRegistryKeyExits {
 }
 
 
-Function CreateExpressionRegistryKeyPathToFileVersion {
+Function New-ExpressionRegistryKeyPathToFileVersion {
 
 <#
 .SYNOPSIS
@@ -479,7 +479,7 @@ Function CreateExpressionRegistryKeyPathToFileVersion {
 }
 
 
-Function CreateExpressionRegistryKeyPathToProductVersion {
+Function New-ExpressionRegistryKeyPathToProductVersion {
 
 <#
 .SYNOPSIS
@@ -549,7 +549,7 @@ Function CreateExpressionRegistryKeyPathToProductVersion {
 }
 
 
-Function CreateExpressionRegistryKeyToFileVersion {
+Function New-ExpressionRegistryKeyToFileVersion {
 
 <#
 .SYNOPSIS
@@ -619,7 +619,7 @@ Function CreateExpressionRegistryKeyToFileVersion {
 }
 
 
-Function CreateExpressionRegistryKeyValue {
+Function New-ExpressionRegistryKeyValue {
 
 <#
 .SYNOPSIS
@@ -683,7 +683,7 @@ Function CreateExpressionRegistryKeyValue {
 }
 
 
-Function CreateExpressionRegistryKeyVersion {
+Function New-ExpressionRegistryKeyVersion {
 
 <#
 .SYNOPSIS
@@ -753,7 +753,7 @@ Function CreateExpressionRegistryKeyVersion {
 }
 
 
-Function CreateExpressionSoftwareFile {
+Function New-ExpressionSoftwareFile {
 
 <#
 .SYNOPSIS
@@ -829,7 +829,7 @@ Function CreateExpressionSoftwareFile {
 }
 
 
-Function CreateExpressionSoftwareFileAddFile {
+Function New-ExpressionSoftwareFileAddFile {
 
 <#
 .SYNOPSIS
@@ -905,7 +905,7 @@ Function CreateExpressionSoftwareFileAddFile {
 }
 
 
-Function CreateExpressionStaticFile {
+Function New-ExpressionStaticFile {
 
 <#
 .SYNOPSIS
@@ -981,7 +981,7 @@ Function CreateExpressionStaticFile {
 }
 
 
-Function CreateExpressionStaticShortcutTarget {
+Function New-ExpressionStaticShortcutTarget {
 
 <#
 .SYNOPSIS
@@ -1033,7 +1033,7 @@ Function CreateExpressionStaticShortcutTarget {
 }
 
 
-Function CreateExpressionWindowsLanguage {
+Function New-ExpressionWindowsLanguage {
 
 <#
 .SYNOPSIS
@@ -1079,7 +1079,7 @@ Function CreateExpressionWindowsLanguage {
 }
 
 
-Function CreateExpressionWindowsVersion {
+Function New-ExpressionWindowsVersion {
 
 <#
 .SYNOPSIS
@@ -1173,7 +1173,7 @@ Function CreateExpressionWindowsVersion {
 }
 
 
-Function CreateInventoryRule {
+Function New-InventoryRule {
 
 <#
 .SYNOPSIS
@@ -1231,7 +1231,7 @@ Function CreateInventoryRule {
 }
 
 
-Function CreateInventoryRuleFromExpression {
+Function New-InventoryRuleFromExpression {
 
 <#
 .SYNOPSIS
@@ -1289,7 +1289,7 @@ Function CreateInventoryRuleFromExpression {
 }
 
 
-Function ExportRuleDefinition {
+Function Export-RuleDefinition {
 
 <#
 .SYNOPSIS
@@ -1341,7 +1341,7 @@ Function ExportRuleDefinition {
 }
 
 
-Function ExportRuleDefinitionsFromComponent {
+Function Export-RuleDefinitionsFromComponent {
 
 <#
 .SYNOPSIS
@@ -1399,7 +1399,7 @@ Function ExportRuleDefinitionsFromComponent {
 }
 
 
-Function GetExpressionsFromRule {
+Function Get-ExpressionsFromRule {
 
 <#
 .SYNOPSIS
@@ -1445,7 +1445,7 @@ Function GetExpressionsFromRule {
 }
 
 
-Function GetExpressionsFromRuleFile {
+Function Get-ExpressionsFromRuleFile {
 
 <#
 .SYNOPSIS
@@ -1491,7 +1491,7 @@ Function GetExpressionsFromRuleFile {
 }
 
 
-Function RemoveExpression {
+Function Remove-Expression {
 
 <#
 .SYNOPSIS
@@ -1543,7 +1543,7 @@ Function RemoveExpression {
 }
 
 
-Function UpdateInventoryRule {
+Function Update-InventoryRule {
 
 <#
 .SYNOPSIS
@@ -1595,7 +1595,7 @@ Function UpdateInventoryRule {
 }
 
 
-Function UpdateInventoryRuleFromExpression {
+Function Update-InventoryRuleFromExpression {
 
 <#
 .SYNOPSIS

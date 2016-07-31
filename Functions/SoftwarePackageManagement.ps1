@@ -1,5 +1,5 @@
 
-Function AddFile {
+Function Add-SWPackageFile {
 
 <#
 .SYNOPSIS
@@ -57,7 +57,7 @@ Function AddFile {
 }
 
 
-Function CreatePackage {
+Function New-SWPackage {
 
 <#
 .SYNOPSIS
@@ -145,7 +145,7 @@ Function CreatePackage {
 }
 
 
-Function DeletePackage {
+Function Remove-SWPackage {
 
 <#
 .SYNOPSIS
@@ -191,7 +191,7 @@ Function DeletePackage {
 }
 
 
-Function GetPackage {
+Function Get-SWPackage {
 
 <#
 .SYNOPSIS
@@ -237,7 +237,7 @@ Function GetPackage {
 }
 
 
-Function RemoveFile {
+Function Remove-SWFile {
 
 <#
 .SYNOPSIS
@@ -295,7 +295,7 @@ Function RemoveFile {
 }
 
 
-Function SetPackageProperty {
+Function Set-SWPackageProperty {
 
 <#
 .SYNOPSIS
@@ -359,7 +359,7 @@ Function SetPackageProperty {
 }
 
 
-Function SetPackageServerSettings {
+Function Set-SWPackageServerSettings {
 
 <#
 .SYNOPSIS
@@ -429,7 +429,7 @@ Function SetPackageServerSettings {
 }
 
 
-Function SetPackageSource {
+Function Set-SWPackageSource {
 
 <#
 .SYNOPSIS
@@ -499,7 +499,7 @@ Function SetPackageSource {
 }
 
 
-Function UpdateDistributionPoints {
+Function Update-SWDistributionPoints {
 
 <#
 .SYNOPSIS
@@ -545,7 +545,7 @@ Function UpdateDistributionPoints {
 }
 
 
-Function ValidateSoftwareLibrary {
+Function Confirm-SWSoftwareLibrary {
 
 <#
 .SYNOPSIS

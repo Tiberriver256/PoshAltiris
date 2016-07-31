@@ -1,5 +1,5 @@
 
-Function AddDeliveryItem {
+Function Add-SoftwareDeliveryItem {
 
 <#
 .SYNOPSIS
@@ -51,7 +51,7 @@ Function AddDeliveryItem {
 }
 
 
-Function CreatePolicy {
+Function New-SoftwareDeliveryPolicy {
 
 <#
 .SYNOPSIS
@@ -103,7 +103,7 @@ Function CreatePolicy {
 }
 
 
-Function GetDefaultPolicySetting {
+Function Get-SoftwareDeliveryDefaultPolicySetting {
 
 <#
 .SYNOPSIS
@@ -149,7 +149,7 @@ Function GetDefaultPolicySetting {
 }
 
 
-Function GetDeliveryItems {
+Function Get-SoftwareDeliveryItems {
 
 <#
 .SYNOPSIS
@@ -195,7 +195,7 @@ Function GetDeliveryItems {
 }
 
 
-Function GetDeliveryItemSetting {
+Function Get-SoftwareDeliveryItemSetting {
 
 <#
 .SYNOPSIS
@@ -253,7 +253,7 @@ Function GetDeliveryItemSetting {
 }
 
 
-Function GetPolicySetting {
+Function Get-SoftwareDeliveryPolicySetting {
 
 <#
 .SYNOPSIS
@@ -305,7 +305,7 @@ Function GetPolicySetting {
 }
 
 
-Function RemoveDeliveryItem {
+Function Remove-SoftwareDeliveryItem {
 
 <#
 .SYNOPSIS
@@ -357,7 +357,7 @@ Function RemoveDeliveryItem {
 }
 
 
-Function SetDefaultPolicySetting {
+Function Set-SoftwareDeliveryDefaultPolicySetting {
 
 <#
 .SYNOPSIS
@@ -409,7 +409,7 @@ Function SetDefaultPolicySetting {
 }
 
 
-Function SetDeliveryItemSetting {
+Function Set-SoftwareDeliveryItemSetting {
 
 <#
 .SYNOPSIS
@@ -473,7 +473,7 @@ Function SetDeliveryItemSetting {
 }
 
 
-Function SetPolicySetting {
+Function Set-SoftwareDeliveryPolicySetting {
 
 <#
 .SYNOPSIS

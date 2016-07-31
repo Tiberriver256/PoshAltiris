@@ -1,5 +1,5 @@
 
-Function AssignResourcesToOrganizationalGroup {
+Function Set-ResourcesToOrganizationalGroup {
 
 <#
 .SYNOPSIS
@@ -51,7 +51,7 @@ Function AssignResourcesToOrganizationalGroup {
 }
 
 
-Function AssignResourceTargetsToPolicy {
+Function Set-ResourceTargetsToPolicy {
 
 <#
 .SYNOPSIS
@@ -103,7 +103,7 @@ Function AssignResourceTargetsToPolicy {
 }
 
 
-Function AssignRoleToOrganizationalGroup {
+Function Set-RoleToOrganizationalGroup {
 
 <#
 .SYNOPSIS
@@ -155,7 +155,7 @@ Function AssignRoleToOrganizationalGroup {
 }
 
 
-Function CreateOrganizationalGroup {
+Function New-OrganizationalGroup {
 
 <#
 .SYNOPSIS
@@ -219,7 +219,7 @@ Function CreateOrganizationalGroup {
 }
 
 
-Function CreateOrganizationalView {
+Function New-OrganizationalView {
 
 <#
 .SYNOPSIS
@@ -271,7 +271,7 @@ Function CreateOrganizationalView {
 }
 
 
-Function CreateResourceTarget {
+Function New-ResourceTarget {
 
 <#
 .SYNOPSIS
@@ -317,7 +317,7 @@ Function CreateResourceTarget {
 }
 
 
-Function DeleteOrganizationalGroup {
+Function Remove-OrganizationalGroup {
 
 <#
 .SYNOPSIS
@@ -363,7 +363,7 @@ Function DeleteOrganizationalGroup {
 }
 
 
-Function DeleteOrganizationalView {
+Function Remove-OrganizationalView {
 
 <#
 .SYNOPSIS
@@ -409,7 +409,7 @@ Function DeleteOrganizationalView {
 }
 
 
-Function GetOrganizationalGroupDirectMembership {
+Function Get-OrganizationalGroupDirectMembership {
 
 <#
 .SYNOPSIS
@@ -455,7 +455,7 @@ Function GetOrganizationalGroupDirectMembership {
 }
 
 
-Function GetOrganizationalGroupMembership {
+Function Get-OrganizationalGroupMembership {
 
 <#
 .SYNOPSIS
@@ -501,7 +501,7 @@ Function GetOrganizationalGroupMembership {
 }
 
 
-Function GetOrganizationalGroupsFromOrganizationalView {
+Function Get-OrganizationalGroupsFromOrganizationalView {
 
 <#
 .SYNOPSIS
@@ -547,7 +547,7 @@ Function GetOrganizationalGroupsFromOrganizationalView {
 }
 
 
-Function GetOrganizationalViews {
+Function Get-OrganizationalViews {
 
 <#
 .SYNOPSIS
@@ -587,7 +587,7 @@ Function GetOrganizationalViews {
 }
 
 
-Function GetOrganizationalViewsFolderGuid {
+Function Get-OrganizationalViewsFolderGuid {
 
 <#
 .SYNOPSIS
@@ -627,7 +627,7 @@ Function GetOrganizationalViewsFolderGuid {
 }
 
 
-Function GetResourcesTargetedByPolicy {
+Function Get-ResourcesTargetedByPolicy {
 
 <#
 .SYNOPSIS
@@ -673,7 +673,7 @@ Function GetResourcesTargetedByPolicy {
 }
 
 
-Function GetResourceTargetMembership {
+Function Get-ResourceTargetMembership {
 
 <#
 .SYNOPSIS
@@ -719,7 +719,7 @@ Function GetResourceTargetMembership {
 }
 
 
-Function GetResourceTargets {
+Function Get-ResourceTargets {
 
 <#
 .SYNOPSIS
@@ -765,7 +765,7 @@ Function GetResourceTargets {
 }
 
 
-Function IsInOrganizationalGroup {
+Function Test-ItemIsInOrganizationalGroup {
 
 <#
 .SYNOPSIS
@@ -817,7 +817,7 @@ Function IsInOrganizationalGroup {
 }
 
 
-Function IsInOrganizationalGroupDirectMembership {
+Function Test-ItemIsInOrganizationalGroupDirectMembership {
 
 <#
 .SYNOPSIS
@@ -869,7 +869,7 @@ Function IsInOrganizationalGroupDirectMembership {
 }
 
 
-Function MoveOrganizationalGroupWithinOrganizationalView {
+Function Move-OrganizationalGroupWithinOrganizationalView {
 
 <#
 .SYNOPSIS
@@ -921,7 +921,7 @@ Function MoveOrganizationalGroupWithinOrganizationalView {
 }
 
 
-Function RemoveResourcesFromOrganizationalGroup {
+Function Remove-ResourcesFromOrganizationalGroup {
 
 <#
 .SYNOPSIS

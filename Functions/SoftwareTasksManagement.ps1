@@ -1,5 +1,5 @@
 
-Function CreateAssignPackagesToSoftwareResourceTask {
+Function New-SWTaskAssignPackagesToSoftwareResource {
 
 <#
 .SYNOPSIS
@@ -51,7 +51,7 @@ Function CreateAssignPackagesToSoftwareResourceTask {
 }
 
 
-Function CreatePackageDeliveryTask {
+Function New-SWTaskPackageDelivery {
 
 <#
 .SYNOPSIS
@@ -103,7 +103,7 @@ Function CreatePackageDeliveryTask {
 }
 
 
-Function CreateQuickDeliveryTask {
+Function New-SWTaskQuickDelivery {
 
 <#
 .SYNOPSIS
@@ -161,7 +161,7 @@ Function CreateQuickDeliveryTask {
 }
 
 
-Function CreateSourcePathUpdateTask {
+Function New-SWTaskSourcePathUpdate {
 
 <#
 .SYNOPSIS
@@ -225,7 +225,7 @@ Function CreateSourcePathUpdateTask {
 }
 
 
-Function CreateVirtualizationTask {
+Function New-SWTaskVirtualization {
 
 <#
 .SYNOPSIS
@@ -289,7 +289,7 @@ Function CreateVirtualizationTask {
 }
 
 
-Function CreateWindowsInstallerRepairTask {
+Function New-SWTaskWindowsInstallerRepair {
 
 <#
 .SYNOPSIS
@@ -335,7 +335,7 @@ Function CreateWindowsInstallerRepairTask {
 }
 
 
-Function RunAssignPackagesToSoftwareResourceTask {
+Function Invoke-SWTaskAssignPackagesToSoftwareResource {
 
 <#
 .SYNOPSIS

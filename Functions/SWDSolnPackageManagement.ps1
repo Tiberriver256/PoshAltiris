@@ -1,5 +1,5 @@
 
-Function AddProgramToPackage {
+Function Add-SWDProgramToPackage {
 
 <#
 .SYNOPSIS
@@ -51,7 +51,7 @@ Function AddProgramToPackage {
 }
 
 
-Function CreatePackageExBasic {
+Function New-SWDPackageBasic {
 
 <#
 .SYNOPSIS
@@ -115,7 +115,7 @@ Function CreatePackageExBasic {
 }
 
 
-Function CreatePackageExDetail {
+Function New-SWDPackageDetail {
 
 <#
 .SYNOPSIS
@@ -209,7 +209,7 @@ Function CreatePackageExDetail {
 }
 
 
-Function GetPackageExByGuid {
+Function Get-SWDPackageByGuid {
 
 <#
 .SYNOPSIS
@@ -255,7 +255,7 @@ Function GetPackageExByGuid {
 }
 
 
-Function ModifyPackageExBasic {
+Function Set-SWDPackageBasic {
 
 <#
 .SYNOPSIS
@@ -325,7 +325,7 @@ Function ModifyPackageExBasic {
 }
 
 
-Function ModifyPackageExDetail {
+Function Set-SWDPackageDetail {
 
 <#
 .SYNOPSIS
@@ -425,7 +425,7 @@ Function ModifyPackageExDetail {
 }
 
 
-Function SetPackageExAdvancedOptions {
+Function Set-SWDPackageAdvancedOptions {
 
 <#
 .SYNOPSIS
@@ -495,7 +495,7 @@ Function SetPackageExAdvancedOptions {
 }
 
 
-Function SetPackageExPackageServerOptions {
+Function Set-SWDPackageServerOptions {
 
 <#
 .SYNOPSIS
@@ -559,7 +559,7 @@ Function SetPackageExPackageServerOptions {
 }
 
 
-Function UpdateDistributionPoints {
+Function Update-SWDDistributionPoints {
 
 <#
 .SYNOPSIS

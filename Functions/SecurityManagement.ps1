@@ -1,5 +1,5 @@
 
-Function AddRoleMembers {
+Function Add-RoleMembers {
 
 <#
 .SYNOPSIS
@@ -51,7 +51,7 @@ Function AddRoleMembers {
 }
 
 
-Function AddRolePrivileges {
+Function Add-RolePrivileges {
 
 <#
 .SYNOPSIS
@@ -103,7 +103,7 @@ Function AddRolePrivileges {
 }
 
 
-Function AssignItemOwnership {
+Function Set-ItemOwnership {
 
 <#
 .SYNOPSIS
@@ -155,7 +155,7 @@ Function AssignItemOwnership {
 }
 
 
-Function CreateNewRole {
+Function New-Role {
 
 <#
 .SYNOPSIS
@@ -207,7 +207,7 @@ Function CreateNewRole {
 }
 
 
-Function DeleteRole {
+Function Remove-Role {
 
 <#
 .SYNOPSIS
@@ -253,7 +253,7 @@ Function DeleteRole {
 }
 
 
-Function DisablePermissionInheritance {
+Function Disable-PermissionInheritance {
 
 <#
 .SYNOPSIS
@@ -305,7 +305,7 @@ Function DisablePermissionInheritance {
 }
 
 
-Function EnablePermissionInheritance {
+Function Enable-PermissionInheritance {
 
 <#
 .SYNOPSIS
@@ -351,7 +351,7 @@ Function EnablePermissionInheritance {
 }
 
 
-Function FindRoleByName {
+Function Find-RoleByName {
 
 <#
 .SYNOPSIS
@@ -397,7 +397,7 @@ Function FindRoleByName {
 }
 
 
-Function RemoveRoleMembers {
+Function Remove-RoleMembers {
 
 <#
 .SYNOPSIS
@@ -449,7 +449,7 @@ Function RemoveRoleMembers {
 }
 
 
-Function RemoveRolePrivileges {
+Function Remove-RolePrivileges {
 
 <#
 .SYNOPSIS

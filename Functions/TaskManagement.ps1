@@ -1,5 +1,5 @@
 
-Function ExecuteTask {
+Function Invoke-Task {
 
 <#
 .SYNOPSIS
@@ -57,7 +57,7 @@ Function ExecuteTask {
 }
 
 
-Function GetExecutedTaskInstances {
+Function Get-TaskExecutedInstances {
 
 <#
 .SYNOPSIS
@@ -103,7 +103,7 @@ Function GetExecutedTaskInstances {
 }
 
 
-Function GetTask {
+Function Get-Task {
 
 <#
 .SYNOPSIS
@@ -149,7 +149,7 @@ Function GetTask {
 }
 
 
-Function GetTaskResourceStatus {
+Function Get-TaskResourceStatus {
 
 <#
 .SYNOPSIS
@@ -201,7 +201,7 @@ Function GetTaskResourceStatus {
 }
 
 
-Function GetTasks {
+Function Get-Tasks {
 
 <#
 .SYNOPSIS
@@ -247,7 +247,7 @@ Function GetTasks {
 }
 
 
-Function GetTasksByType {
+Function Get-TasksByType {
 
 <#
 .SYNOPSIS
@@ -299,7 +299,7 @@ Function GetTasksByType {
 }
 
 
-Function GetTaskStatus {
+Function Get-TaskStatus {
 
 <#
 .SYNOPSIS
@@ -345,7 +345,7 @@ Function GetTaskStatus {
 }
 
 
-Function ScheduleTaskCustom {
+Function Set-TaskScheduleCustom {
 
 <#
 .SYNOPSIS
@@ -415,7 +415,7 @@ Function ScheduleTaskCustom {
 }
 
 
-Function ScheduleTaskShared {
+Function Set-TaskScheduleShared {
 
 <#
 .SYNOPSIS

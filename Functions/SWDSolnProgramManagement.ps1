@@ -1,5 +1,5 @@
 
-Function AssignSoftwarePortalSecurity {
+Function Set-SWDSoftwarePortalSecurity {
 
 <#
 .SYNOPSIS
@@ -63,7 +63,7 @@ Function AssignSoftwarePortalSecurity {
 }
 
 
-Function CreateProgramExBasic {
+Function New-SWDProgramBasic {
 
 <#
 .SYNOPSIS
@@ -115,7 +115,7 @@ Function CreateProgramExBasic {
 }
 
 
-Function CreateProgramExDetail {
+Function New-SWDProgramDetail {
 
 <#
 .SYNOPSIS
@@ -209,7 +209,7 @@ Function CreateProgramExDetail {
 }
 
 
-Function GetProgramExByGuid {
+Function Get-SWDProgramByGuid {
 
 <#
 .SYNOPSIS
@@ -255,7 +255,7 @@ Function GetProgramExByGuid {
 }
 
 
-Function GetProgramsFromPackage {
+Function Get-SWDProgramsFromPackage {
 
 <#
 .SYNOPSIS
@@ -301,7 +301,7 @@ Function GetProgramsFromPackage {
 }
 
 
-Function ModifyProgramExBasic {
+Function Set-SWDProgramBasic {
 
 <#
 .SYNOPSIS
@@ -359,7 +359,7 @@ Function ModifyProgramExBasic {
 }
 
 
-Function ModifyProgramExDetail {
+Function Set-SWDProgramDetail {
 
 <#
 .SYNOPSIS
@@ -459,7 +459,7 @@ Function ModifyProgramExDetail {
 }
 
 
-Function SetProgramExecutionOptions {
+Function Set-SWDProgramExecutionOptions {
 
 <#
 .SYNOPSIS
@@ -559,7 +559,7 @@ Function SetProgramExecutionOptions {
 }
 
 
-Function SetProgramNetworkOptions {
+Function Set-SWDProgramNetworkOptions {
 
 <#
 .SYNOPSIS
@@ -617,7 +617,7 @@ Function SetProgramNetworkOptions {
 }
 
 
-Function SetProgramPackageMapping {
+Function Set-SWDProgramPackageMapping {
 
 <#
 .SYNOPSIS
@@ -675,7 +675,7 @@ Function SetProgramPackageMapping {
 }
 
 
-Function SetProgramRunOptions {
+Function Set-SWDProgramRunOptions {
 
 <#
 .SYNOPSIS

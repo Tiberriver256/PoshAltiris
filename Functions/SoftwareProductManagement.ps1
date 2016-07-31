@@ -1,5 +1,5 @@
 
-Function CreateSoftwareProduct {
+Function New-SWProduct {
 
 <#
 .SYNOPSIS
@@ -57,7 +57,7 @@ Function CreateSoftwareProduct {
 }
 
 
-Function GetSoftwareComponents {
+Function Get-SWProductComponents {
 
 <#
 .SYNOPSIS
@@ -109,7 +109,7 @@ Function GetSoftwareComponents {
 }
 
 
-Function GetSoftwareProduct {
+Function Get-SWProduct {
 
 <#
 .SYNOPSIS

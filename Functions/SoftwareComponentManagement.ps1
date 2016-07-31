@@ -1,5 +1,5 @@
 
-Function AddAssociationToSoftwareComponent {
+Function Add-AssociationToSoftwareComponent {
 
 <#
 .SYNOPSIS
@@ -57,7 +57,7 @@ Function AddAssociationToSoftwareComponent {
 }
 
 
-Function AddCommandLineToSoftwareComponent {
+Function Add-CommandLineToSoftwareComponent {
 
 <#
 .SYNOPSIS
@@ -115,7 +115,7 @@ Function AddCommandLineToSoftwareComponent {
 }
 
 
-Function AddPackageToSoftwareComponent {
+Function Add-PackageToSoftwareComponent {
 
 <#
 .SYNOPSIS
@@ -167,7 +167,7 @@ Function AddPackageToSoftwareComponent {
 }
 
 
-Function AddRulesToSoftwareComponent {
+Function Add-RulesToSoftwareComponent {
 
 <#
 .SYNOPSIS
@@ -225,7 +225,7 @@ Function AddRulesToSoftwareComponent {
 }
 
 
-Function CreateServicePack {
+Function New-ServicePack {
 
 <#
 .SYNOPSIS
@@ -307,7 +307,7 @@ Function CreateServicePack {
 }
 
 
-Function CreateSoftwareRelease {
+Function New-SoftwareRelease {
 
 <#
 .SYNOPSIS
@@ -377,7 +377,7 @@ Function CreateSoftwareRelease {
 }
 
 
-Function CreateSoftwareUpdate {
+Function New-SoftwareUpdate {
 
 <#
 .SYNOPSIS
@@ -453,7 +453,7 @@ Function CreateSoftwareUpdate {
 }
 
 
-Function DetailedExport {
+Function Get-DetailedExport {
 
 <#
 .SYNOPSIS
@@ -511,7 +511,7 @@ Function DetailedExport {
 }
 
 
-Function DetailedImport {
+Function Get-DetailedImport {
 
 <#
 .SYNOPSIS
@@ -557,7 +557,7 @@ Function DetailedImport {
 }
 
 
-Function GetAssociatedResources {
+Function Get-AssociatedResources {
 
 <#
 .SYNOPSIS
@@ -603,7 +603,7 @@ Function GetAssociatedResources {
 }
 
 
-Function GetSoftwareComponent {
+Function Get-SoftwareComponent {
 
 <#
 .SYNOPSIS
@@ -649,7 +649,7 @@ Function GetSoftwareComponent {
 }
 
 
-Function ImportSoftwareRelease {
+Function Import-SoftwareRelease {
 
 <#
 .SYNOPSIS
@@ -755,7 +755,7 @@ Function ImportSoftwareRelease {
 }
 
 
-Function RemoveAssociationFromSoftwareComponent {
+Function Remove-AssociationFromSoftwareComponent {
 
 <#
 .SYNOPSIS
@@ -807,7 +807,7 @@ Function RemoveAssociationFromSoftwareComponent {
 }
 
 
-Function RemoveCommandLineFromSoftwareComponent {
+Function Remove-CommandLineFromSoftwareComponent {
 
 <#
 .SYNOPSIS
@@ -859,7 +859,7 @@ Function RemoveCommandLineFromSoftwareComponent {
 }
 
 
-Function RemovePackageFromSoftwareComponent {
+Function Remove-PackageFromSoftwareComponent {
 
 <#
 .SYNOPSIS
@@ -911,7 +911,7 @@ Function RemovePackageFromSoftwareComponent {
 }
 
 
-Function RemoveRulesFromSoftwareComponent {
+Function Remove-RulesFromSoftwareComponent {
 
 <#
 .SYNOPSIS
@@ -963,7 +963,7 @@ Function RemoveRulesFromSoftwareComponent {
 }
 
 
-Function ResolveDuplicatedSoftware {
+Function Resolve-DuplicatedSoftware {
 
 <#
 .SYNOPSIS
@@ -1081,7 +1081,7 @@ Function ResolveDuplicatedSoftware {
 }
 
 
-Function SetSoftwareComponentProperty {
+Function Set-SoftwareComponentProperty {
 
 <#
 .SYNOPSIS

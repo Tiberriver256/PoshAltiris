@@ -1,5 +1,5 @@
 
-Function CreateAdvertisementEx {
+Function New-SWDAdvertisement {
 
 <#
 .SYNOPSIS
@@ -87,7 +87,7 @@ Function CreateAdvertisementEx {
 }
 
 
-Function GetAdvertisementExByGuid {
+Function Get-SWDAdvertisementByGuid {
 
 <#
 .SYNOPSIS
@@ -133,7 +133,7 @@ Function GetAdvertisementExByGuid {
 }
 
 
-Function GetAdvertisementExStatusByResourceGuid {
+Function Get-SWDAdvertisementStatusByResourceGuid {
 
 <#
 .SYNOPSIS
@@ -185,7 +185,7 @@ Function GetAdvertisementExStatusByResourceGuid {
 }
 
 
-Function GetAdvertisementExStatusByResourceName {
+Function Get-SWDAdvertisementStatusByResourceName {
 
 <#
 .SYNOPSIS
@@ -237,7 +237,7 @@ Function GetAdvertisementExStatusByResourceName {
 }
 
 
-Function GetAdvertisementExStatusByResourceTargetGuid {
+Function Get-SWDAdvertisementStatusByResourceTargetGuid {
 
 <#
 .SYNOPSIS
@@ -289,7 +289,7 @@ Function GetAdvertisementExStatusByResourceTargetGuid {
 }
 
 
-Function GetAdvertismentExRunTimeByResourceGuid {
+Function Get-SWDAdvertismentRunTimeByResourceGuid {
 
 <#
 .SYNOPSIS
@@ -341,7 +341,7 @@ Function GetAdvertismentExRunTimeByResourceGuid {
 }
 
 
-Function GetAdvertismentExRunTimeByResourceName {
+Function Get-SWDAdvertismentRunTimeByResourceName {
 
 <#
 .SYNOPSIS
@@ -393,7 +393,7 @@ Function GetAdvertismentExRunTimeByResourceName {
 }
 
 
-Function ModifyAdvertisementExBasic {
+Function Set-SWDAdvertisementBasic {
 
 <#
 .SYNOPSIS
@@ -451,7 +451,7 @@ Function ModifyAdvertisementExBasic {
 }
 
 
-Function ModifyAdvertisementExDetail {
+Function Set-SWDAdvertisementDetail {
 
 <#
 .SYNOPSIS
@@ -533,7 +533,7 @@ Function ModifyAdvertisementExDetail {
 }
 
 
-Function ModifyResourceTargets {
+Function Set-SWDResourceTargets {
 
 <#
 .SYNOPSIS
@@ -591,7 +591,7 @@ Function ModifyResourceTargets {
 }
 
 
-Function SetAdvertisementExAgentSettings {
+Function Set-SWDAdvertisementAgentSettings {
 
 <#
 .SYNOPSIS
@@ -685,7 +685,7 @@ Function SetAdvertisementExAgentSettings {
 }
 
 
-Function SetAdvertisementExRunOptions {
+Function Set-SWDAdvertisementRunOptions {
 
 <#
 .SYNOPSIS
@@ -761,7 +761,7 @@ Function SetAdvertisementExRunOptions {
 }
 
 
-Function SetAdvertisementExScheduleRunASAP {
+Function Set-SWDAdvertisementScheduleRunASAP {
 
 <#
 .SYNOPSIS
