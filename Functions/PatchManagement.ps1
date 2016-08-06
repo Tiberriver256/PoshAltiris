@@ -1,5 +1,5 @@
 
-Function  {
+Function Add-PatchGuids {
 
 <#
 .SYNOPSIS

@@ -887,7 +887,7 @@ The CLI is being deprecated. Please see the CLI Programming Guide.
 }
 
 
-Function  {
+Function Set-SWDAdvertisementScheduleRunAt {
 
 <#
 .SYNOPSIS
@@ -944,7 +944,7 @@ The CLI is being deprecated. Please see the CLI Programming Guide.
 }
 
 
-Function  {
+Function Set-SWDAdvertisementScheduleScheduleXML {
 
 <#
 .SYNOPSIS
@@ -1001,7 +1001,7 @@ The CLI is being deprecated. Please see the CLI Programming Guide.
 }
 
 
-Function  {
+Function Set-SWDAvailabilityRemovalOptions {
 
 <#
 .SYNOPSIS

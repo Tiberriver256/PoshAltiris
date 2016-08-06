@@ -1,5 +1,5 @@
 
-Function  {
+Function Copy-AltirisItem {
 
 <#
 .SYNOPSIS
@@ -944,7 +944,7 @@ The CLI is being deprecated. Please see the CLI Programming Guide.
 }
 
 
-Function Move-Item {
+Function Move-AltirisItem {
 
 <#
 .SYNOPSIS
@@ -1006,7 +1006,7 @@ The CLI is being deprecated. Please see the CLI Programming Guide.
 }
 
 
-Function Rename-Item {
+Function Rename-AltirisItem {
 
 <#
 .SYNOPSIS
