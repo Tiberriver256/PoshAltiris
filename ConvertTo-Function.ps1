@@ -1,4 +1,5 @@
-﻿
+﻿. .\ServiceToCmdletMappings.ps1
+
 Function Create-HTMLDOMFromFile
 {
 Param(
@@ -26,8 +27,6 @@ Param(
 
 Function ConvertTo-Function ($WebService, $ServiceName) {
 
-    start-process hh.exe -ArgumentList @("-decompile", "$((Get-Location).Path + '\DecompiledHelp')", "$((Get-Item .\ASDK8.0.chm).FullName)") -Wait
-
     $WebServiceMethods = $WebService | gm -MemberType Method | where {$_.Name -notmatch "Async" -and$_.Definition -notmatch "System.IAsyncResult" -and @("Discover","Dispose","ToString","Abort","InitializeLifetimeService","GetType","GetHashcode","Equals","GetLifeTimeService","CreateObjRef") -notcontains $_.name}
 
     foreach ($Method in $WebServiceMethods) {
@@ -38,7 +37,7 @@ Function ConvertTo-Function ($WebService, $ServiceName) {
 
     $Function = @"
 
-Function $($CurrentMethodDefinition.Captures[0].Groups[2].Value) {
+Function $($ServiceToCmdletMappings[$CurrentMethodDefinition.Captures[0].Groups[2].Value]) {
 
 <#
 .SYNOPSIS
@@ -120,7 +119,5 @@ $(
     $Function | Out-String
 
     }
-
-    Remove-Item .\DecompiledHelp -Force -Recurse
 
 }
