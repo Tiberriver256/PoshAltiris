@@ -42,14 +42,14 @@
 
 <pre><code>PS C:\&gt; Get-Command *commandline* -Module PoshAltiris
 
-CommandType     Name                                               Version    Source
------------     ----                                               -------    ------
-Function        AddCommandLineToSoftwareComponent                  0.0        PoshAltiris
-Function        CreateCommandLine                                  0.0        PoshAltiris
-Function        DeleteCommandLine                                  0.0        PoshAltiris
-Function        GetCommandLine                                     0.0        PoshAltiris
-Function        RemoveCommandLineFromSoftwareComponent             0.0        PoshAltiris
-Function        SetCommandLineProperty                             0.0        PoshAltiris
+CommandType     Name                                               Version    Source                                                  
+-----------     ----                                               -------    ------                                                  
+Function        Add-CommandLineToSoftwareComponent                 0.0        PoshAltiris                                             
+Function        Get-CommandLine                                    0.0        PoshAltiris                                             
+Function        New-CommandLine                                    0.0        PoshAltiris                                             
+Function        Remove-CommandLine                                 0.0        PoshAltiris                                             
+Function        Remove-CommandLineFromSoftwareComponent            0.0        PoshAltiris                                             
+Function        Set-CommandLineProperty                            0.0        PoshAltiris                                             
 
 </code></pre>
 
@@ -59,106 +59,104 @@ Function        SetCommandLineProperty                             0.0        Po
 
 <p>The ASDK help file for the various methods on the various web services has been integrated into PowerShell help, so standard help commands can be run to view the documentation.</p>
 
-<pre><code>PS C:\&gt; help SetCommandLineProperty -Full
+<pre><code>PS C:\&gt; Get-Help Set-CommandLineProperty -Full
 
 NAME
-    SetCommandLineProperty
-
+    Set-CommandLineProperty
+    
 SYNOPSIS
     Set software command line property.
-
+    
 SYNTAX
-    SetCommandLineProperty [-CommandLineGuid] &lt;Guid&gt; [-PropertyName] &lt;String&gt; [-PropertyValue] &lt;String&gt; [-Server]
-    &lt;String&gt; [[-Credential] &lt;PSCredential&gt;] [&lt;CommonParameters&gt;]
-
-
+    Set-CommandLineProperty [-CommandLineGuid] &lt;Guid&gt; [-PropertyName] &lt;String&gt; [-PropertyValue] &lt;String&gt; [-Server] &lt;String&gt; 
+    [[-Credential] &lt;PSCredential&gt;] [&lt;CommonParameters&gt;]
+    
+    
 DESCRIPTION
-
+    
 
 PARAMETERS
     -CommandLineGuid &lt;Guid&gt;
         GUID of software command line
-
+        
         Required?                    true
         Position?                    1
-        Default value
+        Default value                
         Accept pipeline input?       false
         Accept wildcard characters?  false
-
+        
     -PropertyName &lt;String&gt;
-        name of property. Valid properties are: Name, Description, CommandLine, CommandLineType, IsDefault,
-        SuccessCodes, FailureCodes, PackageGuid
-
+        name of property. Valid properties are: Name, Description, CommandLine, CommandLineType, IsDefault, SuccessCodes, 
+        FailureCodes, PackageGuid
+        
         Required?                    true
         Position?                    2
-        Default value
+        Default value                
         Accept pipeline input?       false
         Accept wildcard characters?  false
-
+        
     -PropertyValue &lt;String&gt;
-        The property value is passed into the method as a string, appropriate conversion will then be performed on
-        that string. The value CommandLineType should be a Guid, IsDefault is a bool value so it should be "true" or
-        "false", and PackageGuid should be a Guid.
-
+        The property value is passed into the method as a string, appropriate conversion will then be performed on that string. The 
+        value CommandLineType should be a Guid, IsDefault is a bool value so it should be "true" or "false", and PackageGuid should 
+        be a Guid.
+        
         Required?                    true
         Position?                    3
-        Default value
+        Default value                
         Accept pipeline input?       false
         Accept wildcard characters?  false
-
+        
     -Server &lt;String&gt;
-
+        
         Required?                    true
         Position?                    4
-        Default value
+        Default value                
         Accept pipeline input?       false
         Accept wildcard characters?  false
-
+        
     -Credential &lt;PSCredential&gt;
-
+        
         Required?                    false
         Position?                    5
-        Default value
+        Default value                
         Accept pipeline input?       false
         Accept wildcard characters?  false
-
+        
     &lt;CommonParameters&gt;
         This cmdlet supports the common parameters: Verbose, Debug,
         ErrorAction, ErrorVariable, WarningAction, WarningVariable,
-        OutBuffer, PipelineVariable, and OutVariable. For more information, see
-        about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
-
+        OutBuffer, PipelineVariable, and OutVariable. For more information, see 
+        about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216). 
+    
 INPUTS
-
+    
 OUTPUTS
-
+    
     -------------------------- EXAMPLE 1 --------------------------
-
+    
     PS C:\&gt;set failure codes for command line
-
-
+    
+    
     CopyC#
     SoftwareCommandLineManagementLib managementLib = new SoftwareCommandLineManagementLib();
     bool bResult = managementLib.SetCommandLineProperty(cmdLineGuid, "FailureCodes", "1,2,3,4,5");
     CopyVBScript
     set managementLib = CreateObject("Altiris.ASDK.SMF.SoftwareComponentManagement")
     bResult = managementLib.SetCommandLineProperty(cmdLineGuid, "FailureCodes", "1,2,3,4,5")
-    CopyA
+    Copy? 
     set SMF=AltirisASDKSMF.exe
     set CMDLINE_GUID={A7B8BACC-D63B-466e-ABF6-2DC763CEBB6B}
-    %SMF% cmd:SetCommandLineProperty "CommandLineGuid:%CMDLINE_GUID%" "PropertyName:FailureCodes"
-    "PropertyValue:1,2,3,4,5"
+    %SMF% cmd:SetCommandLineProperty "CommandLineGuid:%CMDLINE_GUID%" "PropertyName:FailureCodes" "PropertyValue:1,2,3,4,5"
     echo Failure Codes changed
     Remarks
     The CLI is being deprecated. Please see the CLI Programming Guide.
-
-
-
-
-
-
-RELATED LINKS
-</code></pre>
+    
+    
+    
+    
+    
+    
+RELATED LINKS</code></pre>
 
 <p>&nbsp;</p>
 
@@ -176,4 +174,4 @@ RELATED LINKS
 
 <p>If you have any suggestions or bugs with the program please submit them as issues here:</p>
 
-<p><a href="https://github.com/Tiberriver256/PoshAltirisAltirisASDK/issues" rel="nofollow">https://github.com/Tiberriver256/PoshAltirisAltirisASDK/issues</a></p>
+<p><a href="https://github.com/Tiberriver256/PoshAltiris/issues" rel="nofollow">https://github.com/Tiberriver256/PoshAltiris/issues</a></p>
