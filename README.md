@@ -23,34 +23,33 @@
 
 <h3>Installation</h3>
 
-<p>Open PowerShell and run the following:</p>
+<ol>
+	<li>Download the module from the <a href="https://github.com/Tiberriver256/PowerShellSymantecAltirisASDK" rel="nofollow">Github repository</a></li>
+	<li>Install the module according to PowerShell module <a href="https://msdn.microsoft.com/en-us/library/dd878350(v=vs.85).aspx" rel="nofollow">installation instructions</a></li>
+</ol>
 
-<pre><code>(new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/Tiberriver256/PowerShellSymantecAltirisASDK/master/GetPowerShellSymantecAltirisASDK.ps1") | iex</code></pre>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
+<p># Note: This will be made easier once we publish the module to the PowerShell Gallery. We are working on this at the moment.</p>
 
 <h3>Listing available commands</h3>
 
 <p>There are currently 228 cmdlets available in the module they can be viewed using the following command:</p>
 
-<pre><code>Get-Command -Module PowerShellSymantecAltirisASDK</code></pre>
+<pre><code>Get-Command -Module PoshAltiris</code></pre>
 
 <p>&nbsp;</p>
 
 <p>Finding commands specific to what you are trying to do, say work with package commandlines,&nbsp;is as simple as the following:</p>
 
-<pre><code>PS C:\&gt; Get-Command *commandline* -Module PowerShellSymantecAltirisASDK
+<pre><code>PS C:\&gt; Get-Command *commandline* -Module PoshAltiris
 
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
-Function        AddCommandLineToSoftwareComponent                  0.0        PowerShellSymantecAltirisASDK
-Function        CreateCommandLine                                  0.0        PowerShellSymantecAltirisASDK
-Function        DeleteCommandLine                                  0.0        PowerShellSymantecAltirisASDK
-Function        GetCommandLine                                     0.0        PowerShellSymantecAltirisASDK
-Function        RemoveCommandLineFromSoftwareComponent             0.0        PowerShellSymantecAltirisASDK
-Function        SetCommandLineProperty                             0.0        PowerShellSymantecAltirisASDK
+Function        AddCommandLineToSoftwareComponent                  0.0        PoshAltiris
+Function        CreateCommandLine                                  0.0        PoshAltiris
+Function        DeleteCommandLine                                  0.0        PoshAltiris
+Function        GetCommandLine                                     0.0        PoshAltiris
+Function        RemoveCommandLineFromSoftwareComponent             0.0        PoshAltiris
+Function        SetCommandLineProperty                             0.0        PoshAltiris
 
 </code></pre>
 
@@ -167,7 +166,7 @@ RELATED LINKS
 
 <h2>Contributions</h2>
 
-<p>Contributions are welcome! I would love for any of you to submit a pull request to the main branch in <a href="https://github.com/Tiberriver256/PowerShellSymantecAltirisASDK">Github</a>.</p>
+<p>Contributions are welcome! I would love for any of you to submit a pull request to the main branch in <a href="https://github.com/Tiberriver256/PowerShellSymantecAltirisASDK" rel="nofollow">Github</a>.</p>
 
 <p>&nbsp;</p>
 
@@ -177,4 +176,4 @@ RELATED LINKS
 
 <p>If you have any suggestions or bugs with the program please submit them as issues here:</p>
 
-<p><a href="https://github.com/Tiberriver256/PowerShellSymantecAltirisASDK/issues">https://github.com/Tiberriver256/PowerShellSymantecAltirisASDK/issues</a></p>
+<p><a href="https://github.com/Tiberriver256/PoshAltirisAltirisASDK/issues" rel="nofollow">https://github.com/Tiberriver256/PoshAltirisAltirisASDK/issues</a></p>
