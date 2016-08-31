@@ -23,6 +23,12 @@
 
 <h3>Installation</h3>
 
+<h4>PowerShell v5 or Package Management Installed</h4>
+
+<pre><code>Install-Module PoshAltiris</code></pre>
+
+<h4>Manual Installation</h4>
+
 <ol>
 	<li>Download the module from the <a href="https://github.com/Tiberriver256/PowerShellSymantecAltirisASDK" rel="nofollow">Github repository</a></li>
 	<li>Install the module according to PowerShell module <a href="https://msdn.microsoft.com/en-us/library/dd878350(v=vs.85).aspx" rel="nofollow">installation instructions</a></li>
