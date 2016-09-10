@@ -21,14 +21,14 @@
     @{URI="http://$Server/altiris/ASDK.SWM/SoftwareDeliveryPolicyManagementService.asmx";ServiceName="SoftwareDeliveryPolicyManagement"},
     @{URI="http://$Server/altiris/ASDK.SWM/SoftwarePortalManagementService.asmx";ServiceName="SoftwarePortalManagement"},
     @{URI="http://$Server/altiris/ASDK.SWM/SoftwareTasksManagementService.asmx";ServiceName="SoftwareTasksManagement"},
-    @{URI="http://$Server/altiris/ASDK.Task/TaskManagementService.asmx";ServiceName="TaskManagement"}
+    @{URI="http://$Server/altiris/ASDK.Task/TaskManagementService.asmx";ServiceName="TaskManagement"},
     @{URI="http://$Server/Altiris/PatchManagementCore/PatchWorkflowSvc.asmx";ServiceName="PatchManagement"})
 
     start-process hh.exe -ArgumentList @("-decompile", "$((Get-Location).Path + '\DecompiledHelp')", "$((Get-Item .\ASDK8.0.chm).FullName)") -Wait
 
     foreach ($WebserviceUri in $WebServices)
     {
-        $Path = "$PowerShellASDKPath\Functions\" + $WebServiceuri.ServiceName + '.ps1'
+        $Path = "$PowerShellASDKPath\Public\" + $WebServiceuri.ServiceName + '.ps1'
         New-Item -Path $Path -Force
         $Webservice = New-WebServiceProxy -Uri $WebserviceUri.Uri -UseDefaultCredential
         ConvertTo-Function -WebService $Webservice -ServiceName $WebServiceUri.ServiceName | Out-File -FilePath $Path -Encoding ASCII -Append

@@ -32,7 +32,7 @@ Function ConvertTo-Function ($WebService, $ServiceName) {
     foreach ($Method in $WebServiceMethods) {
     Write-Host "Parsing method: $Method"
     $CurrentMethodDefinition = [regex]::matches($Method.Definition, "^(.*?)\s(\w*)\(((\w*)\s(\w*),?\s?)*\).*$")
-    $HtmlHelpFileName = Get-Item ".\DecompiledHelp\html\*_$($ServiceName)Lib*$($CurrentMethodDefinition.Captures[0].Groups[2].Value).htm"
+    $HtmlHelpFileName = Get-Item ".\DecompiledHelp\html\*_$($ServiceName)*$($CurrentMethodDefinition.Captures[0].Groups[2].Value).htm"
     $HTMLDOMFile = Create-HTMLDOMFromFile -FileName $HtmlHelpFileName.FullName
 
     $Function = @"
