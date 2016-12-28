@@ -106,11 +106,19 @@ $(
 
     if(`$Credential)
     {
-        Invoke-RestMethod -Uri "https://`$Server/`$WebServiceUrl" -Method Post -Body `$Body -Credential `$Credential
+       `$Result = Invoke-RestMethod -Uri "https://`$Server/`$WebServiceUrl" -Method Post -Body `$Body -Credential `$Credential
     }
     else
     {
-        Invoke-RestMethod -Uri "https://`$Server/`$WebServiceUrl" -Method Post -Body `$Body -UseDefaultCredentials
+       `$Result = Invoke-RestMethod -Uri "https://`$Server/`$WebServiceUrl" -Method Post -Body `$Body -UseDefaultCredentials
+    }
+
+    if(`$Result.arrayofitemdetails){
+        return `$Result.ArrayOfItemDetails.ItemDetails
+    }elseif(`$Result.guid){
+        return `$Result.guid.'#text'
+    }else{
+        return `$Result
     }
 
 }
