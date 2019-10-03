@@ -34,8 +34,6 @@
 	<li>Install the module according to PowerShell module <a href="https://msdn.microsoft.com/en-us/library/dd878350(v=vs.85).aspx" rel="nofollow">installation instructions</a></li>
 </ol>
 
-<p># Note: This will be made easier once we publish the module to the PowerShell Gallery. We are working on this at the moment.</p>
-
 <h3>Listing available commands</h3>
 
 <p>There are currently 228 cmdlets available in the module they can be viewed using the following command:</p>
